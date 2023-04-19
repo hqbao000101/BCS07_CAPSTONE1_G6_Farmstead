@@ -58,13 +58,14 @@ Lưu ý: Trước khi bắt đầu tạo nhánh mới để làm phải chạy l
 Ai làm trang nào thì sẽ tạo nhánh tên trang đó để làm rồi mới merge vào nhánh chính sau
   vd: Mình làm trang home thì mình sẽ: git checkout -b home rồi mới bắt đầu code
 
-Trong trường hợp, đang trong lúc làm trên nhánh mình mà ở nhánh chính có code mới thì cần quay về nhánh chính với git checkout rồi git pull code mới về local
+Trong trường hợp, đang trong lúc làm trên nhánh mình mà ở nhánh chính có code mới thì cần quay về nhánh chính với git checkout rồi git pull code mới về local. Sau đó lại checkout về nhánh mình đang làm rồi dùng lệnh git rebase [tên nhánh chính - master] để cập nhật code mới từ nhánh chính vào nhánh đang làm rồi tiếp tục code bình thường.
 
 Và đặc biệt lưu ý ai làm xong trang nào báo vào nhóm trước khi làm trang tiếp theo để quản lý, kiểm tra và merge code lên nhánh chính. Có 2 trường hợp xảy ra sau đó:
   1. Mọi thứ tốt không có lỗi hay conflict code -> Merge code mới lên nhánh chính và mn pull code mới merge về và làm tiếp phần tiếp theo
   2. Có lỗi trong phần code -> Người làm tự chỉnh sửa và khi hoàn thành lại push code và nhắn nhóm
      Có conflict trong code -> Mọi người họp với nhau để thống nhất fix conflict 
 
+* Trong lúc làm ở nhánh phụ, để tránh mất code, thường xuyên commit code để khi phát sinh lỗi không mong muốn mất code có thể git stash trở lại code trong lần commit gấn nhất !!!
 
 !!! Khi gặp khó khăn hay vấn đề trong lúc làm, nhắn báo nhóm hoặc tìm mentors trên lớp để hỗ trợ sớm nhất có thể nhé !!!
 
