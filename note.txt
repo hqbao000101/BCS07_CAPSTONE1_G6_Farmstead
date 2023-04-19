@@ -58,7 +58,7 @@ Lưu ý: Trước khi bắt đầu tạo nhánh mới để làm phải chạy l
 Ai làm trang nào thì sẽ tạo nhánh tên trang đó để làm rồi mới merge vào nhánh chính sau
   vd: Mình làm trang home thì mình sẽ: git checkout -b home rồi mới bắt đầu code
 
-Trong trường hợp, đang trong lúc làm trên nhánh mình mà ở nhánh chính có code mới thì cần quay về nhánh chính với git checkout
+Trong trường hợp, đang trong lúc làm trên nhánh mình mà ở nhánh chính có code mới thì cần quay về nhánh chính với git checkout rồi git pull code mới về local
 
 Và đặc biệt lưu ý ai làm xong trang nào báo vào nhóm trước khi làm trang tiếp theo để quản lý, kiểm tra và merge code lên nhánh chính. Có 2 trường hợp xảy ra sau đó:
   1. Mọi thứ tốt không có lỗi hay conflict code -> Merge code mới lên nhánh chính và mn pull code mới merge về và làm tiếp phần tiếp theo
