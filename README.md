@@ -19,10 +19,10 @@ Link demo: https://wp.w3layouts.com/farmstead/
 
 Brief Description: 
 
-Farmstead is a premium WordPress theme for agriculture and organic food company
-The theme comes with one click demo content, built-in WordPress customizer (free website builder), and live documentation
-The Farmstead theme allows organic businesses to grow quickly and reach more people in an easy way
-It is designed to be used by organic farms and agriculture businesses
+Farmstead is a premium WordPress theme for agriculture and organic food company.
+The theme comes with one click demo content, built-in WordPress customizer (free website builder), and live documentation.
+The Farmstead theme allows organic businesses to grow quickly and reach more people in an easy way.
+It is designed to be used by organic farms and agriculture businesses.
 The website template allows organic businesses to grow quickly and reach more people in an easy way.
   
 Requirements:
