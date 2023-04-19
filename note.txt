@@ -53,6 +53,8 @@ Các code javascript riêng sẽ viết trong file script.js
 
 ***** Git setup *****
 
+Lưu ý: Trước khi bắt đầu tạo nhánh mới để làm phải chạy lệnh git pull trước rồi mới git checkout -b [nhánh mới] để làm phần mình
+
 Ai làm trang nào thì sẽ tạo nhánh tên trang đó để làm rồi mới merge vào nhánh chính sau
   vd: Mình làm trang home thì mình sẽ: git checkout -b home rồi mới bắt đầu code
 
