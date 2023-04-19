@@ -2,9 +2,11 @@
 Cybersoft - Capstone project 1 - Farmstead
 
 Start Date: Mon 24th April, 2023
+
 End Date: Mon 8th May, 2023
 
 Team Project: 6
+
 Member: 3
 
 This is a site called Farmstead, and our team was randomly assigned to this project by mentors.
@@ -27,9 +29,13 @@ Requirements:
   2. Build at least 6 pages existing in the website demo
   3. Create 2 themes for the website: light - dark
   4. When submitting the project must have:
+  
     - Github Link containing source code
+    
     - Online link of the website (can host through github, vercel or netlify)
+    
     - Link youtube (project demo records)
+    
     - Excel file about task distribution among team members
     
 Objectives:
