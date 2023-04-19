@@ -51,5 +51,17 @@ Các thư viện animation online sẽ bỏ vào đây
 
 Các code javascript riêng sẽ viết trong file script.js
 
+***** Git setup *****
 
-😃😃😃 Cảm ơn đã đọc file này nhé !!! 😃😃😃
+Ai làm trang nào thì sẽ tạo nhánh tên trang đó để làm rồi mới merge vào nhánh chính sau
+  vd: Mình làm trang home thì mình sẽ: git checkout -b home rồi mới bắt đầu code
+
+Và đặc biệt lưu ý ai làm xong trang nào báo vào nhóm trước khi làm trang tiếp theo để quản lý, kiểm tra và merge code lên nhánh chính. Có 2 trường hợp xảy ra sau đó:
+  1. Mọi thứ tốt không có lỗi hay conflict code -> Merge code mới lên nhánh chính và mn pull code mới merge về và làm tiếp phần tiếp theo
+  2. Có lỗi trong phần code -> Người làm tự chỉnh sửa và khi hoàn thành lại push code và nhắn nhóm
+     Có conflict trong code -> Mọi người họp với nhau để thống nhất fix conflict 
+
+
+!!! Khi gặp khó khăn hay vấn đề trong lúc làm, nhắn báo nhóm hoặc tìm mentors trên lớp để hỗ trợ sớm nhất có thể nhé !!!
+
+------😃😃😃 Chúc mọi người làm tốt. Cảm ơn đã đọc file này nhé !!! 😃😃😃-------
