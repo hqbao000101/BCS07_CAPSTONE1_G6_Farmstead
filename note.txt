@@ -1,0 +1,55 @@
+!!! Các trang sẽ làm trong dự án:
+  1. Home
+  2. About
+  3. Services 
+  4. Blog Posts
+  5. 404 Page
+  6. Contact
+
+***** html setup *****
+
+file index.html sẽ là file cho trang home trong dự án Farmstead
+
+5 trang còn lại của dự án sẽ được bỏ vào thư mục "pages" và được đặt tên theo các mục trong menu header
+  vd: about.html, services.html
+
+Cách đặt tên class hay id cho các section chính trên một trang để không bị mâu thuẫn trong lúc code:
+  [tên trang]_[tên thành phần]
+  vd: <section class="home_carousel"></section>
+      <section id="about_welcome" class="about_welcome"></section>
+
+***** css setup *****
+
+File style.css sẽ config cho GLOBAL và HEADER. Khi tạo file css cho trang nào 
+thì đặt tên theo: style.[tên trang].css để phân biệt
+  vd: tạo file css cho trang about thì nên đặt tên: style.about.css
+
+Các trang khác nhau sẽ có các file css khác nhau, do vậy nên khi setup phần <head></head> cho các trang khác nhau cần link 2 file css theo ĐÚNG THỨ TỰ sau bao gồm:
+  1. style.css
+  2. style.[tên trang].css
+
+  vd: Khi mình làm trang home thì mình sẽ link 2 file css vào phần <head></head>
+    <head>
+      ...
+      <link rel="stylesheet" href="./css/style.css">
+      <link rel="stylesheet" href="./css/style.home.css">
+    </head>
+
+***** image setup *****
+Link demo farmstead: https://wp.w3layouts.com/farmstead/ 
+
+Khi tải các hình ảnh từ website demo về sẽ bỏ vào thư mục img và bỏ vào thư mục tên trang tương ứng
+  vd: Hình ảnh download từ trang home về sẽ bỏ vào img/Home. Trong lúc code trang Home cần gọi hình ảnh thì mình sẽ gọi: 
+    "./img/home/..."
+    "../img/about/..." (nếu đang code trang about.html và ở trong thư mục pages muốn lấy ảnh ở thư mục "img" -> "about" )
+
+File favicon.png trong "img" là để cài đặt logo cho website
+
+***** JS setup *****
+
+Các thư viện animation online sẽ bỏ vào đây
+
+Các code javascript riêng sẽ viết trong file script.js
+
+
+😃😃😃 Cảm ơn đã đọc file này nhé !!! 😃😃😃
