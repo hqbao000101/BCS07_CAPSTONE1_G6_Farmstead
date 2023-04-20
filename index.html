@@ -1,46 +1,140 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Farmstead</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Farmstead</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Website Icon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
-  <!-- Website Icon -->
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Font Awesome CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- CSS: Home -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/style.home.css">
-</head>
+    <!-- GG-Moon CSS -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
+      rel="stylesheet"
+    />
 
-<body>
-  <!-- ! Hello This is the Home Page !!! -->
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
+    <!-- Google Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    <!-- CSS: Home -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.home.css" />
+  </head>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+  <body>
+    <!-- ! Hello This is the Home Page !!! -->
+    <header>
+      <!-- place navbar here -->
+      <!-- todo: navbar -->
+      <nav class="navbar navbar-expand navbar-light bg-dark">
+        <div class="container">
+          <!-- navbar - left -->
+          <a class="navbar-brand navbar_left text-center" href="#">
+            <i class="fa-solid fa-leaf"></i>
+            <h1>Farmstead</h1>
+          </a>
+          <!-- navbar - right -->
+          <div
+            class="collapse navbar-collapse navbar_right"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <!-- item 1 -->
+              <li class="nav-item">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </li>
+              <!-- item 2 -->
+              <li class="nav-item">
+                <i class="gg-moon"></i>
+                <i class="gg-sun d-none"></i>
+              </li>
+              <!-- item 3 - dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+                <!-- dropdown menu -->
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li><a class="dropdown-item dropdown_active" href="#">HOME</a></li>
+                  <li><a class="dropdown-item" href="#">ABOUT</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">SERVICES</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                  <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main></main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- JS -->
-  <script src="./js/script.js"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- JS -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
