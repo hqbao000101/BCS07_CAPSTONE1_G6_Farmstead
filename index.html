@@ -55,10 +55,9 @@
   <body>
     <!-- ! Hello This is the Home Page !!! -->
     <header>
-      <!-- place navbar here -->
       <!-- todo: navbar -->
       <nav class="navbar navbar-expand navbar-light bg-dark">
-        <div class="container">
+        <div class="container navbar_content">
           <!-- navbar - left -->
           <a class="navbar-brand navbar_left text-center" href="#">
             <i class="fa-solid fa-leaf"></i>
@@ -72,7 +71,10 @@
             <ul class="navbar-nav">
               <!-- item 1 -->
               <li class="nav-item">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <form>
+                  <i class="fa-solid fa-magnifying-glass"> </i>
+                  <input type="text" />
+                </form>
               </li>
               <!-- item 2 -->
               <li class="nav-item">
@@ -96,19 +98,21 @@
                   class="dropdown-menu text-center"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <li><a class="dropdown-item dropdown_active" href="#">HOME</a></li>
-                  <li><a class="dropdown-item" href="#">ABOUT</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">SERVICES</a>
+                    <a class="dropdown-item dropdown_active" href="#">HOME</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                  <li><a class="dropdown-item" href="./pages/about.html">ABOUT</a></li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/services.html">SERVICES</a>
+                  </li>
+                  <li><a class="dropdown-item" href="./pages/blog.html">BLOG POSTS</a></li>
                   <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
                   <li>
                     <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                  <li><a class="dropdown-item" href="./pages/page404.html">404 PAGE</a></li>
                   <li>
-                    <a class="dropdown-item" href="#">CONTACT</a>
+                    <a class="dropdown-item" href="./pages/contact.html">CONTACT</a>
                   </li>
                 </ul>
               </li>
@@ -117,7 +121,14 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <!-- todo: banner -->
+      <section class="home_banner">
+        <div class="container">
+          
+        </div>
+      </section>
+    </main>
     <footer>
       <!-- place footer here -->
     </footer>

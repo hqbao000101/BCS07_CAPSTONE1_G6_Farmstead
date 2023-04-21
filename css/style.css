@@ -1,4 +1,4 @@
-/* ! Global */
+/* ! global */
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +14,12 @@ body {
   color: #fb811e !important;
 }
 
-/* ! Header */
-header > nav {
-  height: 90px;
+/* ! header - navbar */
+header > nav.navbar {
+  padding: 20px 0;
 }
+
+/* header left */
 header .navbar_left {
   position: relative;
 }
@@ -37,6 +39,7 @@ header .navbar_left h1 {
   margin-bottom: 0;
 }
 
+/* header right */
 header .navbar_right {
   justify-content: flex-end;
   align-items: center;
@@ -47,19 +50,50 @@ header .navbar_right .nav-item {
   cursor: pointer;
 }
 
-header .navbar_right .nav-item:nth-child(1) i {
+header .navbar_right .nav-item:nth-child(1) form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  border-radius: 50%;
+}
+
+header .navbar_right .nav-item:nth-child(1) form:hover {
+  border-radius: 20px;
+  padding: 0 20px 0 5px;
+}
+
+header .navbar_right .nav-item:nth-child(1) form i {
   line-height: 40px;
   width: 40px;
   height: 40px;
   background-color: white;
   border-radius: 50%;
   text-align: center;
+  transition: all .5s;
+}
 
+header .navbar_right .nav-item:nth-child(1) form:hover i {
+  color: #fb811e;
+}
+
+header .navbar_right .nav-item:nth-child(1) input {
+  border: none;
+  width: 0;
+}
+
+header .navbar_right .nav-item:nth-child(1) form:hover input {
+  width: 100%;
+}
+
+header .navbar_right .nav-item:nth-child(1) input:focus {
+  outline: none;
 }
 
 header .navbar_right .nav-item:nth-child(2) i {
   margin: 10px 0;
   color: white;
+  transition: all .5s;
 }
 
 header .navbar_right .nav-item:nth-child(2) i:hover {
@@ -73,11 +107,18 @@ header .navbar_right .nav-item:nth-child(3) > a {
 header .navbar_right .nav-item:nth-child(3) > a i {
   color: white;
   font-size: 25px;
+  transition: all .5s;
 }
 
+header .navbar_right .nav-item:nth-child(3) > a i:hover {
+  color: #fb811e;
+}
+
+/* Dropdown menu */
 header .navbar_right .dropdown-menu[data-bs-popper] {
   left: -215px;
   width: 15rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 header .navbar_right .nav-item:nth-child(3) ul li {
@@ -92,4 +133,16 @@ header .navbar_right .nav-item:nth-child(3) ul li a {
 header .navbar_right .nav-item:nth-child(3) ul li a:hover {
   color: #fb811e;
   background-color: transparent;
+}
+
+/* ! responsive */
+@media screen and (max-width: 575.98px) {
+  /* header */
+  header .navbar_content {
+    flex-direction: column;
+  }
+
+  header .navbar_content .navbar_right {
+    margin-left: auto;
+  } 
 }
