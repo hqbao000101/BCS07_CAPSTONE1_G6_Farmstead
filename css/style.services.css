@@ -1,0 +1,24 @@
+/* BANNER  */
+.services_banner{
+    background-image: url('../img/services/img1.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 100px 0 20px 0 ;
+}
+
+/* .services_banner .banner_content{
+    align-items: center;
+} */
+
+.services_banner .banner_content .title{
+    width: 40%;
+}
+
+.services_banner .banner_content .img{
+    width: 60%;
+}
+
+.services_banner .banner_content ul{
+    padding: 0;
+}
