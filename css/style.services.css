@@ -1,0 +1,172 @@
+/* GLOBAL  */
+:root {
+    --rtfm-primary-color: #e60000;
+    --rtfm-offset-color: #f8f8f8;
+    --rtfm-text-color: #333;
+}
+:root {
+    --wp--preset--font-size--normal: 16px;
+    --wp--preset--font-size--huge: 42px;
+}
+:root {
+    --theme-color: #e40000;
+    --primary-color: #fb811e;
+    --primary-light: #fcf1e7;
+    --primary-dark: #ffc945;
+    --secondary-color: #009f4d;
+    --font-color: #707070;
+    --bg-color: #fff;
+    --heading-color: #060606;
+    --footer-color: #060e1f;
+    --footer-cpy-color: #040a17;
+    --border-radius: 30px;
+    --border-radius-full: 15px;
+    --border-color: transparent;
+    --border-color-light: #eee;
+    --iframe-filter: grayscale(0%);
+    --bg-grey: #f4f4f4;
+    --bg-light: #fafafa;
+    --bg-dark-color: #fff;
+    --quote-text-color: #1d2c4c;
+    --icon-gra-color: linear-gradient(75deg, #1c2e7b 10%, #e60264);
+    --shadow-color: rgb(0 0 0 / 3%);
+    --box-shadow: rgb(0 0 0 / 41%);
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #ff4c4c;
+    --secondary: #e71d36;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+h1,h2,h3,h4{
+    color: var(--heading-color);
+    font-family: 'Volkhov', serif;
+    clear: both;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+p{
+    font-size: 17px;
+    color: var(--font-color);
+}
+
+/* BANNER  */
+.services_banner{
+    background-image: url('../img/services/img1.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 100px 0 20px 0 ;
+}
+
+.services_banner .banner_content ul{
+    padding: 0;
+}
+
+.services_banner .banner_content .title h4, a{
+    font-weight: 700;
+}
+
+/* PRODUCTS  */
+.services_products .area-box{
+    padding: 50px 35px;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    background-color: var(--bg-color-2);
+    box-shadow: 0 1rem 3rem var(--shadow-color);
+}
+
+.services_products .area-box:hover{
+    transition: .3s;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.1);
+}
+
+.services_products .products_item i{
+    font-size: 45px;
+    color: var(--primary-color);
+}
+
+.services_products .products_item h4 a{
+    transition: all .5s;
+}
+
+.services_products .products_item h4 a.title-head:hover{
+    color: var(--primary-color);
+}
+
+/* QUALITY  */
+.services_quality .quality_content .quality_left img{
+    border-radius: var(--border-radius);
+}
+
+.services_quality .quality_content .quality_right h5{
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.services_quality .quality_content .quality_right h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.services_quality .quality_content .quality_right .grids_info span.fa {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.services_quality .quality_content .quality_right .grids_info h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* NUMBER  */
+.services_number .number_content .number_item span{
+    color: var(--secondary-color);
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgb(0 159 77 / 4%);
+    font-size: 32px;
+}
+
+.services_number .number_content .number_item .count-number{
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--heading-color);
+}
