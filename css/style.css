@@ -69,8 +69,16 @@ body {
 .dark-theme i {
   color: black;
 }
-
 /***** End dark-theme *****/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul li {
+  list-style: none;
+}
 
 /* ! header - navbar */
 header > nav.navbar {
