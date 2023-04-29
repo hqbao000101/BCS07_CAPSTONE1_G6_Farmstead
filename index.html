@@ -1,46 +1,450 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Farmstead</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <title>Farmstead</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Website Icon -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
 
-  <!-- Website Icon -->
-  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <!-- ! Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- ! Font Awesome CSS  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-  <!-- CSS: Home -->
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/style.home.css">
-</head>
+    <!-- ! GG-Moon CSS -->
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
+      rel="stylesheet"
+    />
 
-<body>
-  <!-- ! Hello This is the Home Page !!! -->
-  <header>
-    <!-- place navbar here -->
-  </header>
-  <main>
+    <!-- ! Google Font CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Volkhov:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
+    <!-- ! CSS: Home -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.home.css" />
+  </head>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
+  <body>
+    <!-- ! Here is the Home Page !!! -->
+    <header>
+      <!-- todo: header - navbar -->
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container navbar_content">
+          <!-- navbar - left -->
+          <a class="navbar-brand navbar_left text-center" href="#">
+            <i class="fa-solid fa-leaf"></i>
+            <h1>Farmstead</h1>
+          </a>
+          <!-- navbar - right -->
+          <div
+            class="collapse navbar-collapse navbar_right"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <!-- item 1 -->
+              <li class="nav-item">
+                <form class="a">
+                  <label for="search">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                  </label>
+                  <input type="text" id="search" />
+                </form>
+              </li>
+              <!-- item 2 -->
+              <li class="nav-item">
+                <i class="gg-moon"></i>
+                <i class="gg-sun d-none"></i>
+              </li>
+              <!-- item 3 - dropdown -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+                <!-- dropdown menu -->
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item dropdown_active" href="#">HOME</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/about.html">ABOUT</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/services.html"
+                      >SERVICES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/blog.html"
+                      >BLOG POSTS</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/page404.html"
+                      >404 PAGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/contact.html"
+                      >CONTACT</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- todo: banner -->
+      <section class="home_banner position-relative">
+        <div class="container-fluid">
+          <div class="banner_container">
+            <!-- * title -->
+            <div class="banner_title col-md-5">
+              <h2>Farm</h2>
+              <div class="title_content">
+                <h1>Welcome to Farmstead where Natural Food is born!</h1>
+                <p>
+                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium.
+                </p>
+                <button>Learn more</button>
+              </div>
+            </div>
+            <!-- * carousel -->
+            <div
+              id="carouselExampleCaptions"
+              class="carousel slide banner_carousel col-md-7"
+              data-bs-ride="carousel"
+            >
+              <!-- * btn-indicator -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <!-- * content -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="./img/home/b1.jpg"
+                    class="d-block w-100"
+                    alt="Carousel B1 Pic"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>01<span>/03</span></h4>
+                    <p>Agriculture</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/home/b8.jpg"
+                    class="d-block w-100"
+                    alt="Carousel B8 Pic"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>02<span>/03</span></h4>
+                    <p>Farm Field</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./img/home/b4.jpg"
+                    class="d-block w-100"
+                    alt="Carousel B4 Pic"
+                  />
+                  <div class="carousel-caption d-none d-md-block">
+                    <h4>03<span>/03</span></h4>
+                    <p>Organic Farm</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-  <!-- JS -->
-  <script src="./js/script.js"></script>
-</body>
+      <!-- todo: leaders -->
+      <section class="home_leaders py-5">
+        <div class="container">
+          <div class="row py-md-5 py-4 leaders__wrapper">
+            <!-- left -->
+            <div class="col-lg-6 pe-lg-5">
+              <div class="leaders__content">
+                <div class="heading">
+                  <h3>Grow Naturally</h3>
+                  <h2>Leaders in the field</h2>
+                  <p>
+                    Aurabitur id gravida risus. Fusce eget ex fermentum,
+                    ultricies nisi ac sed, lacinia est. Quisque ut lectus
+                    consequat, venenatis eros et, sed commodo risus. Nullam sit
+                    amet laoreet elit. Suspendisse non init magnaa velit
+                    efficitur, dolor eget ex fermentum.
+                  </p>
+                  <button class="mt-lg-5 mt-4">
+                    <a href="./pages/about.html">DISCOVER MORE</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- right -->
+            <div class="col-lg-6">
+              <div class="leaders__card text-center">
+                <div class="row">
+                  <!-- item 1 -->
+                  <div class="col-sm-6">
+                    <div class="card__item my-3">
+                      <img
+                        class="img-fluid"
+                        src="./img/home/img4.png"
+                        alt="Field Pic 1"
+                      />
+                      <h4>Natural Products</h4>
+                    </div>
+                  </div>
+                  <!-- item 2 -->
+                  <div class="col-sm-6">
+                    <div class="card__item my-3">
+                      <img
+                        class="img-fluid"
+                        src="./img/home/img2.png"
+                        alt="Field Pic 2"
+                      />
+                      <h4>Wheat Cultivation</h4>
+                    </div>
+                  </div>
+                  <!-- item 3 -->
+                  <div class="col-sm-6">
+                    <div class="card__item my-3">
+                      <img
+                        class="img-fluid"
+                        src="./img/home/img1.png"
+                        alt="Field Pic 3"
+                      />
+                      <h4>Modern Truck</h4>
+                    </div>
+                  </div>
+                  <!-- item 4 -->
+                  <div class="col-sm-6">
+                    <div class="card__item my-3">
+                      <img
+                        class="img-fluid"
+                        src="./img/home/img3.png"
+                        alt="Field Pic 4"
+                      />
+                      <h4>Organic Products</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <!-- todo: service -->
+      <section class="home_service py-5">
+        <div class="container">
+          <!-- content -->
+          <div class="row service__content text-white position-relative mb-sm-5 mb-4">
+            <h4>Services</h4>
+            <div class="col-md-6 position-relative pe-md-5">
+              <h3>What we do</h3>
+              <h2>Why Choose Our Fresh Organic Foods</h2>
+            </div>
+            <div class="col-md-6 position-relative">
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                doloremque, eaque ipsa quae ab illo inventore.Sed ut
+                perspiciatis unde omnis iste natus error sit.
+              </p>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="row service__card">
+            <!-- item 1 -->
+            <div class="col-md-6 col-lg-4 p-3">
+              <div class="card__item">
+                <div class="card__image">
+                  <a href="./pages/services.html">
+                    <img
+                      class="img-fluid"
+                      src="./img/home/service1.jpg"
+                      alt="Service Pic 1"
+                    />
+                  </a>
+                </div>
+                <div class="card__content">
+                  <span>Natural</span>
+                  <a href="./pages/services.html">Agriculture Products</a>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus sit accusantium
+                    doloremque laudantium, totam rem aperiam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="col-md-6 col-lg-4 p-3">
+              <div class="card__item">
+                <div class="card__image">
+                  <a href="./pages/services.html">
+                    <img
+                      class="img-fluid"
+                      src="./img/home/service2.jpg"
+                      alt="Service Pic 2"
+                    />
+                  </a>
+                </div>
+                <div class="card__content">
+                  <span>Agriculture</span>
+                  <a href="./pages/services.html">Fresh Vegetables</a>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus sit accusantium
+                    doloremque laudantium, totam rem aperiam
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="col-md-6 col-lg-4 p-3 mx-md-auto">
+              <div class="card__item">
+                <div class="card__image">
+                  <a href="./pages/services.html">
+                    <img
+                      class="img-fluid"
+                      src="./img/home/service3.jpg"
+                      alt="Service Pic 3"
+                    />
+                  </a>
+                </div>
+                <div class="card__content">
+                  <span>Farm</span>
+                  <a href="./pages/services.html">Organic Products</a>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus sit accusantium
+                    doloremque laudantium, totam rem aperiam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- todo: choose -->
+      <section class="home_choose">
+        <div class="container">
+          
+        </div>
+      </section>
+
+      <!-- todo: products -->
+      <section class="home_products">
+        <div class="container"></div>
+      </section>
+
+      <!-- todo: gallery -->
+      <section class="home_gallery">
+        <div class="container"></div>
+      </section>
+
+      <!-- todo: carousel -->
+      <section class="home_carousel"></section>
+    </main>
+    <footer>
+      <!-- todo: footer -->
+      <div class="container"></div>
+    </footer>
+
+    <!-- todo: back-to-top btn -->
+    <a id="backTop" href="#"> </a>
+
+    <!-- todo: right side navbar -->
+    <section class="home_sidenav"></section>
+
+    <!-- ! Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ! JQuery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ! JS -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
