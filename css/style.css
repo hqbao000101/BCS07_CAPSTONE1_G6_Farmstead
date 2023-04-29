@@ -1,4 +1,9 @@
 /* ! global */
+:root {
+  --font-source: "Source Sans Pro", sans-serif;
+  --font-volkhov: "Volkhov", serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,16 +12,77 @@
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: var(--font-source);
 }
 
 .dropdown_active {
   color: #fb811e !important;
 }
 
+/***** section heading *****/
+.heading h3 {
+  font-size: 22px;
+  color: #fb811e;
+  font-family: var(--font-volkhov);
+}
+
+.heading h2 {
+  font-size: 40px;
+  color: #060606;
+  font-family: var(--font-volkhov);
+  font-weight: 600;
+}
+
+.heading p {
+  font-size: 17px;
+  color: #707070;
+  line-height: 27px;
+  margin: 16px 0 0 0;
+}
+
+.heading button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background-color: #fb811e;
+  border: none;
+  transition: all 0.5s;
+}
+
+.heading button:hover {
+  background-color: #009f4d;
+}
+
+.heading button a {
+  text-decoration: none;
+  line-height: 26px;
+  color: white;
+  font-weight: 600;
+}
+
+/***** End section heading *****/
+
+/***** dark-theme *****/
+.dark-theme {
+  background-color: #222222;
+}
+
+.dark-theme i {
+  color: black;
+}
+
+/***** End dark-theme *****/
+
 /* ! header - navbar */
 header > nav.navbar {
   padding: 20px 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.3s;
+  flex-wrap: wrap;
 }
 
 /* header left */
@@ -30,6 +96,7 @@ header .navbar_left i {
   left: 45%;
   transform: translateX(-50%);
   color: #fb811e;
+  transition: all 0.3s;
 }
 
 header .navbar_left h1 {
@@ -37,6 +104,12 @@ header .navbar_left h1 {
   color: #fb811e;
   font-family: "Volkhov", serif;
   margin-bottom: 0;
+  transition: all 0.3s;
+}
+
+header .navbar_left:hover i,
+header .navbar_left:hover h1 {
+  color: black;
 }
 
 /* header right */
@@ -55,45 +128,44 @@ header .navbar_right .nav-item:nth-child(1) form {
   justify-content: flex-start;
   align-items: center;
   background-color: white;
-  border-radius: 50%;
-}
-
-header .navbar_right .nav-item:nth-child(1) form:hover {
-  border-radius: 20px;
-  padding: 0 20px 0 5px;
+  border-radius: 10em;
 }
 
 header .navbar_right .nav-item:nth-child(1) form i {
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
   background-color: white;
   border-radius: 50%;
   text-align: center;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 header .navbar_right .nav-item:nth-child(1) form:hover i {
   color: #fb811e;
 }
 
-header .navbar_right .nav-item:nth-child(1) input {
+header .navbar_right .nav-item:nth-child(1) form input {
   border: none;
   width: 0;
+  background-color: transparent;
+  transition: all 0.5s;
 }
 
-header .navbar_right .nav-item:nth-child(1) form:hover input {
-  width: 100%;
-}
-
-header .navbar_right .nav-item:nth-child(1) input:focus {
+header .navbar_right .nav-item:nth-child(1) form input:focus {
   outline: none;
+  width: 200px;
+}
+
+header .navbar_right .nav-item:nth-child(2) {
+  width: 30px;
+  height: 30px;
 }
 
 header .navbar_right .nav-item:nth-child(2) i {
   margin: 10px 0;
   color: white;
-  transition: all .5s;
+  transition: all 0.3s;
 }
 
 header .navbar_right .nav-item:nth-child(2) i:hover {
@@ -107,7 +179,7 @@ header .navbar_right .nav-item:nth-child(3) > a {
 header .navbar_right .nav-item:nth-child(3) > a i {
   color: white;
   font-size: 25px;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 header .navbar_right .nav-item:nth-child(3) > a i:hover {
@@ -127,7 +199,7 @@ header .navbar_right .nav-item:nth-child(3) ul li {
 
 header .navbar_right .nav-item:nth-child(3) ul li a {
   font-weight: 700;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 header .navbar_right .nav-item:nth-child(3) ul li a:hover {
@@ -135,14 +207,46 @@ header .navbar_right .nav-item:nth-child(3) ul li a:hover {
   background-color: transparent;
 }
 
+/* * fixed when scrolling */
+header > nav.sticky-nav {
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+
+header > nav.sticky-nav .navbar_left i,
+header > nav.sticky-nav .navbar_left h1,
+header > nav.sticky-nav .navbar_right .nav-item:nth-child(2) i,
+header > nav.sticky-nav .navbar_right .nav-item:nth-child(3) i {
+  color: #060606;
+}
+
+header > nav.sticky-nav .navbar_right .nav-item:nth-child(1) form {
+  border: 1px solid #eee;
+}
+
+header > nav.sticky-nav .navbar_left:hover i,
+header > nav.sticky-nav .navbar_left:hover h1,
+header > nav.sticky-nav .navbar_right .nav-item:nth-child(2) i:hover,
+header > nav.sticky-nav .navbar_right .nav-item:nth-child(3) i:hover {
+  color: #fb811e;
+}
+
+/* ! footer */
+
+/* ! back-to-top btn */
+
+/* ! right side navbar */
+
 /* ! responsive */
 @media screen and (max-width: 575.98px) {
   /* header */
   header .navbar_content {
-    flex-direction: column;
+    flex-direction: row;
   }
 
-  header .navbar_content .navbar_right {
-    margin-left: auto;
-  } 
+  header .navbar_right .nav-item:nth-child(1) form input:focus {
+    width: 100%;
+  }
 }

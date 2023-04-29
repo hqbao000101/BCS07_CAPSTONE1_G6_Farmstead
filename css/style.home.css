@@ -1,1 +1,320 @@
-/* ! Banner */
+/* ! banner */
+main .home_banner .container-fluid {
+  padding: 0;
+}
+
+main .home_banner .banner_container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+main .home_banner .banner_title {
+  max-width: 700px;
+  position: absolute;
+  left: 10em;
+  z-index: 1;
+}
+
+main .home_banner .banner_title h2 {
+  color: #f4f4f4;
+  font-size: 120px;
+  font-family: "Volkhov", serif;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0 0 0 -0.5em;
+}
+
+main .home_banner .banner_title .title_content h1 {
+  color: #060606;
+  font-size: 50px;
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+main .home_banner .banner_title .title_content p {
+  color: #707070;
+  font-size: 20px;
+  line-height: 27px;
+  margin: 24px 0 48px;
+}
+
+main .home_banner .banner_title .title_content button {
+  background-color: #fb811e;
+  color: white;
+  line-height: 26px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.5s;
+}
+
+main .home_banner .banner_title .title_content button:hover {
+  background-color: #009f4d;
+}
+
+main .home_banner .banner_carousel {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  border-radius: 0 0 0 20px;
+  overflow: hidden;
+}
+
+main .home_banner .banner_carousel .carousel-inner,
+main .home_banner .banner_carousel .carousel-item,
+main .home_banner .banner_carousel img {
+  height: 100%;
+}
+
+main .home_banner .banner_carousel img {
+  object-fit: cover;
+}
+
+main .home_banner .banner_carousel .carousel-item {
+  position: relative;
+}
+
+main .home_banner .banner_carousel .carousel-item::before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .home_banner .banner_carousel .carousel-caption {
+  right: 10px;
+  left: auto;
+}
+
+main .home_banner .banner_carousel .carousel-caption h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: var(--font-volkhov);
+  margin-bottom: 0;
+}
+
+main .home_banner .banner_carousel .carousel-caption span {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: var(--font-source);
+}
+
+main .home_banner .banner_carousel .carousel-caption p {
+  font-size: 17px;
+  line-height: 27px;
+  margin-bottom: 0;
+}
+
+main .home_banner .banner_carousel .carousel-indicators [data-bs-target] {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+main
+  .home_banner
+  .banner_carousel
+  .carousel-indicators
+  [data-bs-target].active {
+  background-color: #fb811e;
+}
+
+/* ! leaders */
+.home_leaders .leaders__wrapper {
+  align-items: center;
+}
+
+.home_leaders .leaders__card .card__item {
+  padding: 40px 30px;
+  border-radius: 30px;
+  box-shadow: 0 1rem 3rem rgb(0, 0, 0, 3%);
+  transition: all 0.3s;
+}
+
+.home_leaders .leaders__card .card__item:hover {
+  box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+}
+
+.home_leaders .leaders__card .card__item img {
+  max-width: 65px;
+}
+
+.home_leaders .leaders__card .card__item h4 {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #060606;
+  font-family: var(--font-volkhov);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.home_leaders .leaders__card .card__item h4:hover {
+  color: #009f4d;
+}
+
+/* ! service */
+.home_service {
+  background-color: #009f4d;
+}
+
+.home_service .service__content {
+  align-items: center;
+}
+
+.home_service .service__content h4 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 12vw;
+  opacity: .14;
+  font-weight: bold;
+  font-family: var(--font-volkhov);
+  line-height: 28px;
+}
+
+.home_service .service__content h3 {
+  font-size: 22px;
+  font-family: var(--font-volkhov);
+}
+
+.home_service .service__content h2 {
+  font-size: 40px;
+  line-height: 50px;
+  font-weight: 600;
+  font-family: var(--font-volkhov);
+}
+
+.home_service .service__content p {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.home_service .service__card .card__item {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.home_service .service__card .card__item .card__content {
+  padding: 30px 20px;
+}
+
+.home_service .service__card .card__item .card__content span {
+  color: #009f4d;
+  padding: 5px 20px;
+  font-weight: 600;
+  background-color: rgba(0, 159, 77, 16%);
+  border-radius: 15px;
+}
+
+.home_service .service__card .card__item .card__content a {
+  font-size: 24px;
+  line-height: 30px;
+  color: #060606;
+  font-weight: 600;
+  margin: 15px 0;
+  display: block;
+  text-decoration: none;
+  transition: all .5s;
+}
+
+.home_service .service__card .card__item .card__content a:hover {
+  color: #009f4d;
+}
+
+.home_service .service__card .card__item .card__content p {
+  font-size: 17px;
+  line-height: 27px;
+  color: #707070;
+}
+
+/* ! choose */
+
+
+/* ! products */
+
+/* ! gallery */
+
+/* ! carousel */
+
+/* ! Responsive */
+@media screen and (max-width: 991.98px) {
+  /* banner */
+  main .home_banner .banner_title {
+    max-width: 700px;
+    left: 2em;
+  }
+
+  main .home_banner .banner_title h2 {
+    font-size: 80px;
+  }
+
+  main .home_banner .banner_title .title_content h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  main .home_banner .banner_title .title_content p {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  /* banner */
+  main .home_banner .banner_title {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 8px;
+    padding: 3em 2em 2em 4em;
+  }
+
+  main .home_banner .banner_carousel {
+    width: 100%;
+  }
+
+  /* service */
+  .home_service .service__content h3 {
+    font-size: 18px;
+  }
+  
+  .home_service .service__content h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  /* banner */
+  main .home_banner .banner_title {
+    padding: 2.5em 2em 2em 2.5em;
+  }
+
+  main .home_banner .banner_title h2 {
+    font-size: 60px;
+  }
+
+  main .home_banner .banner_title .title_content h1 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+
+  main .home_banner .banner_title .title_content p {
+    font-size: 16px;
+    margin: 8px 0 24px;
+  }
+}
