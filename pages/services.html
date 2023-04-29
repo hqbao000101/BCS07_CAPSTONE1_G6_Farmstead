@@ -17,6 +17,16 @@
       crossorigin="anonymous"
     />
 
+    <!-- google-fonts -->
+    <link
+      href="//fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- font awesome  -->
     <link
       rel="stylesheet"
@@ -131,9 +141,9 @@
       <!-- END PRODUCTS  -->
 >>>>>>> 71eb7fb (services-quality-and-number-v1)
       <!-- QUALITY  -->
-      <section class="services_quality">
-        <div class="container py-5">
-          <div class="quality_content py-md-5 py-4 row">
+      <section class="services_quality py-5">
+        <div class="container py-md-5 py-4">
+          <div class="quality_content row">
             <div class="quality_left col-lg-6 mt-lg-0 mt-5 position-relative">
               <img
                 src="../img/services/img2.jpg"
@@ -178,7 +188,7 @@
             <div class="number_item col-md-3 col-6">
               <span class="fa fa-bullhorn"></span>
               <div
-                class="count-title count-number mt-3"
+                class="count-title count-number mt-3 counter"
                 data-to="1286"
                 data-speed="1500"
               >
@@ -187,44 +197,59 @@
               <p class="count-text">Our Farms</p>
             </div>
             <div class="number_item col-md-3 col-6">
-                <span class="fa fa-bullhorn"></span>
-                <div
-                  class="count-title count-number mt-3"
-                  data-to="1286"
-                  data-speed="1500"
-                >
-                  1,286
-                </div>
-                <p class="count-text">Our Farms</p>
+              <span class="fa-solid fa-basket-shopping"></span>
+              <div
+                class="count-title count-number mt-3 counter"
+                data-to="1286"
+                data-speed="1500"
+              >
+                36,076
               </div>
-              <div class="number_item col-md-3 col-6 mt-md-0 mt-5">
-                <span class="fa fa-bullhorn"></span>
-                <div
-                  class="count-title count-number mt-3"
-                  data-to="1286"
-                  data-speed="1500"
-                >
-                  1,286
-                </div>
-                <p class="count-text">Our Farms</p>
+              <p class="count-text">AGRICULTURE PRODUCTS</p>
+            </div>
+            <div class="number_item col-md-3 col-6 mt-md-0 mt-5">
+              <span class="fa-regular fa-face-smile"></span>
+              <div
+                class="count-title count-number mt-3 counter"
+                data-to="1286"
+                data-speed="1500"
+              >
+                16,300
               </div>
-              <div class="number_item col-md-3 col-6 mt-md-0 mt-5">
-                <span class="fa fa-bullhorn"></span>
-                <div
-                  class="count-title count-number mt-3"
-                  data-to="1286"
-                  data-speed="1500"
-                >
-                  1,286
-                </div>
-                <p class="count-text">Our Farms</p>
+              <p class="count-text">HAPPY CUSTOMERS</p>
+            </div>
+            <div class="number_item col-md-3 col-6 mt-md-0 mt-5">
+              <span class="fa-solid fa-trophy"></span>
+              <div
+                class="count-title count-number mt-3 counter"
+                data-to="1286"
+                data-speed="1500"
+              >
+                10,630
               </div>
+              <p class="count-text">AWARDS WON</p>
+            </div>
           </div>
         </div>
       </section>
       <!-- END NUMBER  -->
       <!-- THEME -->
-      <section class="services_theme"></section>
+      <section class="services_theme">
+        <div class="theme_overlay"></div>
+        <div class="container py-md-5 py-4">
+          <div class="theme_content row py-5">
+            <div class="theme_item col-md-7">
+              <h5 class="small-title text-white mb-2">Agriculture Theme</h5>
+              <h3 class="text-white">
+                You can request for call back, we will call !
+              </h3>
+              <a class="btn btn-style mt-4" href="#url"
+                >Request for call back</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- END THEME  -->
     </main>
     <footer>
@@ -242,5 +267,25 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Jquery  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Jquery Waypoints -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- CountUp JS  -->
+    <script src="../js/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp();
+    </script>
   </body>
 </html>
