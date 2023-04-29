@@ -76,6 +76,11 @@ h1,h2,h3,h4,h5,h6{
     line-height: 28px;
 }
 
+p{
+    font-size: 17px;
+    color: var(--font-color);
+}
+
 /* BANNER  */
 .services_banner{
     background-image: url('../img/services/img1.png');
@@ -119,4 +124,49 @@ h1,h2,h3,h4,h5,h6{
 
 .services_products .products_item h4 a.title-head:hover{
     color: var(--primary-color);
+}
+
+/* QUALITY  */
+.services_quality .quality_content .quality_left img{
+    border-radius: var(--border-radius);
+}
+
+.services_quality .quality_content .quality_right h5{
+    color: var(--primary-color);
+    font-size: 22px;
+}
+
+.services_quality .quality_content .quality_right h3{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    color: var(--heading-color);
+}
+
+.services_quality .quality_content .quality_right .grids_info span.fa {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.services_quality .quality_content .quality_right .grids_info h4{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* NUMBER  */
+.services_number .number_content .number_item span{
+    color: var(--secondary-color);
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgb(0 159 77 / 4%);
+    font-size: 32px;
+}
+
+.services_number .number_content .number_item .count-number{
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--heading-color);
 }
