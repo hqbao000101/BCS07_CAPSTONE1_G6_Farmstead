@@ -19,48 +19,6 @@ body {
   color: #fb811e !important;
 }
 
-/***** section heading *****/
-.heading h3 {
-  font-size: 22px;
-  color: #fb811e;
-  font-family: var(--font-volkhov);
-}
-
-.heading h2 {
-  font-size: 40px;
-  color: #060606;
-  font-family: var(--font-volkhov);
-  font-weight: 600;
-}
-
-.heading p {
-  font-size: 17px;
-  color: #707070;
-  line-height: 27px;
-  margin: 16px 0 0 0;
-}
-
-.heading button {
-  padding: 12px 30px;
-  border-radius: 30px;
-  background-color: #fb811e;
-  border: none;
-  transition: all 0.5s;
-}
-
-.heading button:hover {
-  background-color: #009f4d;
-}
-
-.heading button a {
-  text-decoration: none;
-  line-height: 26px;
-  color: white;
-  font-weight: 600;
-}
-
-/***** End section heading *****/
-
 /***** dark-theme *****/
 .dark-theme {
   background-color: #222222;
@@ -90,7 +48,6 @@ header > nav.navbar {
   width: 100%;
   z-index: 10;
   transition: all 0.3s;
-  flex-wrap: wrap;
 }
 
 /* header left */
@@ -100,8 +57,8 @@ header .navbar_left {
 
 header .navbar_left i {
   position: absolute;
-  top: -5px;
-  left: 45%;
+  top: -1px;
+  left: 40%;
   transform: translateX(-50%);
   color: #fb811e;
   transition: all 0.3s;
@@ -166,7 +123,7 @@ header .navbar_right .nav-item:nth-child(1) form input {
 
 header .navbar_right .nav-item:nth-child(1) form input:focus {
   outline: none;
-  width: 200px;
+  width: 12em;
 }
 
 header .navbar_right .nav-item:nth-child(2) {
@@ -274,11 +231,11 @@ header > nav.sticky-nav .navbar_right .nav-item:nth-child(3) i:hover {
 /* ! 576px */
 @media screen and (max-width: 575.98px) {
   /* todo: header */
-  header .navbar_content {
-    flex-direction: row;
+  header > nav.navbar {
+    flex-wrap: wrap;
   }
 
   header .navbar_right .nav-item:nth-child(1) form input:focus {
-    width: 100%;
+    width: 115px;
   }
 }
