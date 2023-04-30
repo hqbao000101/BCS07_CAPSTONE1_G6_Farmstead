@@ -585,16 +585,16 @@
       <!-- todo: gallery -->
       <section id="gallery" class="home_gallery py-5">
         <div class="container">
-          <div class="row py-5">
+          <div class="row py-5 px-3">
             <!-- gallery-item 1 -->
-            <div class="col-md-6 col-lg-3 heading p-0 pb-md-3 mb-5 mb-md-0">
+            <div class="col-md-6 col-lg-3 heading px-3 p-sm-0 pb-md-3 mb-5 mb-md-0">
               <h3>Gallery</h3>
               <h2>Our Products</h2>
               <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
               <button><a href="#gallery">DISCOVER MORE</a></button>
             </div>
             <!-- gallery-item 2 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g2.jpg"
@@ -611,7 +611,7 @@
               </div>
             </div>
             <!-- gallery-item 3 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g3.jpg"
@@ -628,7 +628,7 @@
               </div>
             </div>
             <!-- gallery-item 4 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g6.jpg"
@@ -645,7 +645,7 @@
               </div>
             </div>
             <!-- gallery-item 5 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g5.jpg"
@@ -662,7 +662,7 @@
               </div>
             </div>
             <!-- gallery-item 6 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g1.jpg"
@@ -679,7 +679,7 @@
               </div>
             </div>
             <!-- gallery-item 7 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g7.jpg"
@@ -696,7 +696,7 @@
               </div>
             </div>
             <!-- gallery-item 8 -->
-            <div class="col-6 col-lg-3 p-0">
+            <div class="col-sm-6 col-lg-3 py-3 p-sm-0">
               <div class="gallery__item position-relative">
                 <a
                   href="./img/home/g8.jpg"
@@ -717,11 +717,98 @@
       </section>
 
       <!-- todo: carousel -->
-      <section class="home_carousel"></section>
+      <section class="home_carousel py-5 bg-info">
+        <div class="container">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- indicators -->
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <!-- Content -->
+            <div class="carousel-inner">
+              <!-- item 1 -->
+              <div class="carousel-item active px-lg-5">
+                <div class="row carousel__content">
+                  <div class="col-md-4 text-center ps-lg-5">
+                    <img src="./img/home/testi1.jpg" alt="Customer Pic 1" />
+                    <h4>Dennis Wilson</h4>
+                    <p>Customer</p>
+                  </div>
+                  <div class="col-md-8 pe-lg-5 mt-3 mt-lg-0">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+                      <p>
+                        "Lorem ipsum dolor sit amet int consectetur adipisicing elit. Brocoli beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet."
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="carousel-item px-lg-5">
+                <div class="row carousel__content">
+                  <div class="col-md-4 text-center ps-lg-5">
+                    <img src="./img/home/testi2.jpg" alt="Customer Pic 2" />
+                    <h4>Dennis Wilson</h4>
+                    <p>Customer</p>
+                  </div>
+                  <div class="col-md-8 pe-lg-5 mt-3 mt-lg-0">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+                      <p>
+                        "Lorem ipsum dolor sit amet int consectetur adipisicing elit. Brocoli beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet."
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="carousel-item px-lg-5">
+                <div class="row carousel__content">
+                  <div class="col-md-4 text-center ps-lg-5">
+                    <img src="./img/home/testi3.jpg" alt="Customer Pic 3" />
+                    <h4>Dennis Wilson</h4>
+                    <p>Customer</p>
+                  </div>
+                  <div class="col-md-8 pe-lg-5 mt-3 mt-lg-0">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <blockquote>
+                      <p>
+                        "Lorem ipsum dolor sit amet int consectetur adipisicing elit. Brocoli beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet."
+                      </p>
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <!-- todo: footer -->
-      <div class="container"></div>
+      <div class="container">
+        
+      </div>
     </footer>
 
     <!-- todo: back-to-top btn -->
