@@ -741,3 +741,7 @@ ul#recentcomments li a {
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
 }
+
+.blog_banner .banner_content .title h4, a{
+    font-weight: 700;
+}
