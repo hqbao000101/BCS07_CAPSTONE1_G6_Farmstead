@@ -1,0 +1,50 @@
+/* GLOBAL  */
+h1,h2,h3,h4{
+    color: #060606;
+    font-family: 'Volkhov', serif;
+    clear: both;
+    font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+p{
+    font-size: 17px;
+    color: #707070;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+/* BANNER  */
+.blog_banner{
+    background-image: url('../img/blog/img1.png');
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    padding: 100px 0 20px 0 ;
+}
+
+.blog_banner .banner_content ul{
+    padding: 0;
+    line-height: 1.5;
+    color: #707070;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.blog_banner .banner_content .title h4, a{
+    font-weight: 700;
+}
