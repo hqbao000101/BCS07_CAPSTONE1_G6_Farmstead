@@ -34,4 +34,16 @@ $(document).ready(function () {
         "#navbarNavDropdown ul .nav-item:nth-child(2) i:nth-child(1)"
       ).style.display = "block";
     });
+    
+    // * dropdown-menu
+    var isExpended = false;
+    document.getElementById("menu-dropdown").onclick = function() {
+      if (isExpended) {
+        document.querySelector("header .navbar_right .dropdown-menu").classList.remove("dropdown_expand");
+        isExpended = false;
+      } else {
+        document.querySelector("header .navbar_right .dropdown-menu").classList.add("dropdown_expand");
+        isExpended = true;
+      }
+    }
 });
