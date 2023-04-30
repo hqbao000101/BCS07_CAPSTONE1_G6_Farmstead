@@ -22,10 +22,33 @@ body {
 /***** dark-theme *****/
 .dark-theme {
   background-color: #222222;
+  color: white !important;
 }
 
 .dark-theme i {
   color: black;
+}
+
+.dark-theme p {
+  color: #b7b7b7;
+}
+
+.dark-theme h4 {
+  color: white;
+}
+
+/* home - navbar */
+.dark-theme header > nav.sticky-nav,
+.dark-theme header .navbar_right .dropdown-menu.dropdown_expand {
+  background-color: #222;
+}
+
+.dark-theme header > nav.sticky-nav .navbar_left i,
+.dark-theme header > nav.sticky-nav .navbar_left h1,
+.dark-theme header > nav.sticky-nav .navbar_right .nav-item:nth-child(2) i,
+.dark-theme header > nav.sticky-nav .navbar_right .nav-item:nth-child(3) i,
+.dark-theme header .navbar_right .nav-item:nth-child(3) ul li a {
+  color: white;
 }
 /***** End dark-theme *****/
 
@@ -123,7 +146,7 @@ header .navbar_right .nav-item:nth-child(1) form input {
 
 header .navbar_right .nav-item:nth-child(1) form input:focus {
   outline: none;
-  width: 12em;
+  width: 180px;
 }
 
 header .navbar_right .nav-item:nth-child(2) {
