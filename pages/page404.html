@@ -58,7 +58,7 @@
       <nav class="navbar navbar-expand navbar-light">
         <div class="container navbar_content">
           <!-- navbar - left -->
-          <a class="navbar-brand navbar_left text-center" href="#">
+          <a class="navbar-brand navbar_left text-center" href="../index.html">
             <i class="fa-solid fa-leaf"></i>
             <h1>Farmstead</h1>
           </a>
@@ -100,7 +100,7 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item dropdown_active" href="#">HOME</a>
+                    <a class="dropdown-item" href="../index.html">HOME</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="./pages/about.html">ABOUT</a>
@@ -120,7 +120,7 @@
                     <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./pages/page404.html"
+                    <a class="dropdown-item dropdown_active" href="#"
                       >404 PAGE</a
                     >
                   </li>
@@ -139,10 +139,37 @@
 
     <main>
       <section class="oops">
-        
+        <div class="container">
+          <div class="oops__content text-sm-start text-center">
+            <div class="content__title d-flex align-items-center justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+              <h1>4</h1>
+              <div class="zero_shadow">
+                <div id="zero">
+                  <div class="zero__inner"></div>
+                </div>
+              </div>
+              <h1>4</h1>
+            </div>
+            <p>Oops! That page can’t be found</p>
+            <form class="position-relative">
+              <input
+                type="text"
+                placeholder="Search your keywords..."
+                name="search-keywords"
+              />
+              <a href="#">
+                <i class="fa fa-search"></i>
+              </a>
+            </form>
+            <a href="../index.html">
+              <i class="fa fa-arrow-left"></i>
+              <span>Back to home</span>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
-    
+
     <!-- todo: footer -->
     <footer class="py-5">
       <div class="container py-4">
@@ -165,7 +192,7 @@
           <div
             class="col-md-6 col-lg-4 footer__column position-relative mt-5 mt-md-0 order-md-0 order-1"
           >
-            <a href="#">
+            <a href="../index.html">
               <i class="fa-solid fa-leaf"></i>
               <h1>Farmstead</h1>
             </a>
@@ -219,7 +246,7 @@
 
     <!-- todo: right side navbar -->
     <i id="right" class="fa fa-angle-double-right"></i>
-    <i id="left" class="fa fa-angle-double-left"></i> 
+    <i id="left" class="fa fa-angle-double-left"></i>
     <section class="home_sidenav">
       <div class="sidenav__block">
         <div class="block__content text-center">
