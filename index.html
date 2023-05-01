@@ -60,8 +60,8 @@
 
   <body>
     <!-- ! Here is the Home Page !!! -->
+    <!-- todo: header - navbar -->
     <header>
-      <!-- todo: header - navbar -->
       <nav class="navbar navbar-expand navbar-light">
         <div class="container navbar_content">
           <!-- navbar - left -->
@@ -143,6 +143,7 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- todo: banner -->
       <section class="home_banner position-relative">
@@ -587,7 +588,9 @@
         <div class="container">
           <div class="row py-5 px-3">
             <!-- gallery-item 1 -->
-            <div class="col-md-6 col-lg-3 heading px-3 p-sm-0 pb-md-3 mb-5 mb-md-0">
+            <div
+              class="col-md-6 col-lg-3 heading px-3 p-sm-0 pb-md-3 mb-5 mb-md-0"
+            >
               <h3>Gallery</h3>
               <h2>Our Products</h2>
               <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
@@ -719,7 +722,11 @@
       <!-- todo: carousel -->
       <section class="home_carousel py-5 bg-info">
         <div class="container">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
             <!-- indicators -->
             <div class="carousel-indicators">
               <button
@@ -757,7 +764,12 @@
                     <i class="fa-solid fa-quote-left"></i>
                     <blockquote>
                       <p>
-                        "Lorem ipsum dolor sit amet int consectetur adipisicing elit. Brocoli beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet."
+                        "Lorem ipsum dolor sit amet int consectetur adipisicing
+                        elit. Brocoli beatae laudantium Quas minima sunt natus
+                        tempore, maiores aliquid modi felis sequi optio lacinia
+                        id ipsum non velit, culpa. voluptate rem ullam dolore
+                        nisi est quasi, doloribus tempora. est elit. Non quae,
+                        fugiat ad libero justo sed amet."
                       </p>
                     </blockquote>
                   </div>
@@ -775,7 +787,12 @@
                     <i class="fa-solid fa-quote-left"></i>
                     <blockquote>
                       <p>
-                        "Lorem ipsum dolor sit amet int consectetur adipisicing elit. Brocoli beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet."
+                        "Lorem ipsum dolor sit amet int consectetur adipisicing
+                        elit. Brocoli beatae laudantium Quas minima sunt natus
+                        tempore, maiores aliquid modi felis sequi optio lacinia
+                        id ipsum non velit, culpa. voluptate rem ullam dolore
+                        nisi est quasi, doloribus tempora. est elit. Non quae,
+                        fugiat ad libero justo sed amet."
                       </p>
                     </blockquote>
                   </div>
@@ -793,7 +810,12 @@
                     <i class="fa-solid fa-quote-left"></i>
                     <blockquote>
                       <p>
-                        "Lorem ipsum dolor sit amet int consectetur adipisicing elit. Brocoli beatae laudantium Quas minima sunt natus tempore, maiores aliquid modi felis sequi optio lacinia id ipsum non velit, culpa. voluptate rem ullam dolore nisi est quasi, doloribus tempora. est elit. Non quae, fugiat ad libero justo sed amet."
+                        "Lorem ipsum dolor sit amet int consectetur adipisicing
+                        elit. Brocoli beatae laudantium Quas minima sunt natus
+                        tempore, maiores aliquid modi felis sequi optio lacinia
+                        id ipsum non velit, culpa. voluptate rem ullam dolore
+                        nisi est quasi, doloribus tempora. est elit. Non quae,
+                        fugiat ad libero justo sed amet."
                       </p>
                     </blockquote>
                   </div>
@@ -804,15 +826,80 @@
         </div>
       </section>
     </main>
-    <footer>
-      <!-- todo: footer -->
-      <div class="container">
-        
+
+    <!-- todo: footer -->
+    <footer class="py-5">
+      <div class="container py-4">
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-6 col-lg-4 footer__column">
+            <h4>FIND US</h4>
+            <ul>
+              <li>
+                Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.
+              </li>
+              <li>Phone: <a href="tel:+1223456790">+12 23456790</a></li>
+              <li>
+                Email: <a href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>Fax: <a href="tel:+1136721890">+11 367 21890</a></li>
+            </ul>
+          </div>
+          <!-- column 2 -->
+          <div
+            class="col-md-6 col-lg-4 footer__column position-relative mt-5 mt-md-0 order-md-0 order-1"
+          >
+            <a href="#">
+              <i class="fa-solid fa-leaf"></i>
+              <h1>Farmstead</h1>
+            </a>
+            <p>
+              Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+              Aliquam eget turpis ornare, euismod clear surgeon, electronic dui.
+            </p>
+          </div>
+          <!-- column 3 -->
+          <div class="col-lg-4 footer__column mt-5 mt-lg-0">
+            <h4>NEWSLETTER</h4>
+            <p>
+              Subscribe to our mailing list and get updates to your email inbox.
+            </p>
+            <form class="d-flex">
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="user-email"
+              />
+              <button type="button">
+                <i class="fa fa-paper-plane"></i>
+              </button>
+            </form>
+            <div class="footer__social mt-4 pt-2">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
 
     <!-- todo: back-to-top btn -->
-    <a id="backTop" href="#"> </a>
+    <a id="backTop" href="#">
+      <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- todo: right side navbar -->
     <section class="home_sidenav"></section>

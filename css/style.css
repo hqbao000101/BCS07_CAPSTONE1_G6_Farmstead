@@ -50,6 +50,27 @@ body {
 .dark-theme header .navbar_right .nav-item:nth-child(3) ul li a {
   color: white;
 }
+
+/* home - footer */
+.dark-theme footer .footer__column h4 {
+  color: white;
+}
+
+.dark-theme footer .footer__column ul li,
+.dark-theme footer .footer__column ul li a,
+.dark-theme footer .footer__column p {
+  color: #b7b7b7;
+}
+
+.dark-theme footer .footer__column form input {
+  background-color: #0b0e0d;
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme footer .footer__column form button i {
+  color: white;
+}
+
 /***** End dark-theme *****/
 
 a {
@@ -237,9 +258,107 @@ header > nav.sticky-nav .navbar_right .nav-item:nth-child(3) i:hover {
 }
 
 /* ! footer */
+footer .footer__column h4 {
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #060606;
+  font-family: var(--font-volkhov);
+}
 
+footer .footer__column ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer .footer__column ul li,
+footer .footer__column ul li a {
+  color: #707070;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  transition: all .5s;
+}
+
+footer .footer__column ul li a:hover {
+  color: #fb811e;
+}
+
+footer .footer__column > a i {
+  position: absolute;
+  top: -7px;
+  left: 68px;
+  font-size: 20px;
+  color: #fb811e;
+  transition: all .5s;
+}
+
+footer .footer__column a h1 {
+  font-size: 32px;
+  color: #fb811e;
+  font-family: var(--font-volkhov);
+  margin-bottom: 24px;
+  transition: all .5s;
+}
+
+footer .footer__column a:hover i, 
+footer .footer__column a:hover h1 {
+  color: #060606;
+}
+
+footer .footer__column p {
+  color: #707070;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+footer .footer__column form input {
+  background-color: #f4f4f4;
+  color: #707070;
+  padding: 12px 20px;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 30px 0 0 30px;
+  width: 80%;
+}
+
+footer .footer__column form button {
+  width: 20%;
+  background-color: #009f4d;
+  border: 1px solid #009f4d;
+  color: white;
+  border-radius: 0 30px 30px 0;
+  padding: 12px;
+  font-size: 16px;
+  transition: all .5s;
+}
+
+footer .footer__column form button:hover {
+  opacity: 0.8;
+}
+
+footer .footer__column .footer__social a i {
+  color: #009f4d;
+  width: 35px;
+  height: 35px;
+  background-color: rgb(10 191 83 / 8%);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 5px;
+  font-size: 15px;
+  transition: all .5s;
+}
+
+footer .footer__column .footer__social a i:hover {
+  color: #fb811e;
+  background-color: rgb(255 201 69 / 19%);
+  box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%);
+}
 
 /* ! back-to-top btn */
+
 
 /* ! right side navbar */
 

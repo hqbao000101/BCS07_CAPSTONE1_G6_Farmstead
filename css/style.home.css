@@ -47,6 +47,10 @@
 }
 
 /* home - banner */
+.dark-theme .home_banner .banner_title {
+  background-color: #222;
+}
+
 .dark-theme .home_banner .banner_title h2 {
   color: black;
 }
