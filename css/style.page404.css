@@ -74,10 +74,10 @@ header > nav.navbar {
   width: 150px;
   border-radius: 50%;
   background-color: transparent;
-  border-top: 7px solid #009f4d;
-  border-bottom: 7px solid #009f4d;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
+  border-top: 6px solid #009f4d;
+  border-bottom: 6px solid #009f4d;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   animation: borderSpin 5s infinite ease-in;
   position: relative;
 }
