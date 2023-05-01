@@ -358,7 +358,34 @@ footer .footer__column .footer__social a i:hover {
 }
 
 /* ! back-to-top btn */
+.backTop {
+  position: fixed;
+  bottom: 90px;
+  right: 15px;
+  background-color: #009f4d;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .5s;
+}
 
+.backTop:hover {
+  opacity: 0.8;
+}
+
+.backTop i {
+  color: white;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+}
 
 /* ! right side navbar */
 

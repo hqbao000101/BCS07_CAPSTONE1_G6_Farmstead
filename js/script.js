@@ -1,10 +1,20 @@
 $(document).ready(function () {
   // todo: scroll event
+  // * navbar - stick 
   window.addEventListener("scroll", function () {
     if (window.scrollY > 0) {
       document.querySelector("header > nav").classList.add("sticky-nav");
     } else {
       document.querySelector("header > nav").classList.remove("sticky-nav");
+    }
+  });
+
+  // * back-to-top
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 50) {
+      this.document.getElementById("top").classList.add("visible");
+    } else {
+      this.document.getElementById("top").classList.remove("visible");
     }
   });
 
