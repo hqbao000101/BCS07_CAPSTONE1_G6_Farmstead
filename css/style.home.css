@@ -47,10 +47,6 @@
 }
 
 /* home - banner */
-.dark-theme .home_banner .banner_title {
-  background-color: #222;
-}
-
 .dark-theme .home_banner .banner_title h2 {
   color: black;
 }
@@ -604,6 +600,10 @@ main
   .heading h2 {
     font-size: 32px;
     line-height: 42px;
+  }
+  /* * dark-theme */
+  .dark-theme .home_banner .banner_title {
+    background-color: #222;
   }
 
   /* todo: banner */
