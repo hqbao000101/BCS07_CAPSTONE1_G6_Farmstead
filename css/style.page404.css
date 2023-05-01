@@ -8,6 +8,15 @@ header > nav.navbar {
   background-color: #333;
 }
 
+.dark-theme .oops .oops__content .content__title .zero_shadow {
+  background: radial-gradient(
+    circle,
+    #333 0 50%,
+    rgba(0, 159, 77, 0.1) 62% 65%,
+    #333 70%
+  );
+}
+
 .dark-theme .oops .oops__content > p,
 .dark-theme .oops .oops__content > a i,
 .dark-theme .oops .oops__content > a span {
@@ -50,8 +59,14 @@ header > nav.navbar {
 
 .oops .oops__content .content__title .zero_shadow {
   border-radius: 50%;
-  box-shadow: 3px 2px 13px #009f4d;
   margin: 0 20px;
+  padding: 10px;
+  background: radial-gradient(
+    circle,
+    #eef1f3 0 50%,
+    rgba(0, 159, 77, 0.2) 62% 65%,
+    #eef1f3 70%
+  );
 }
 
 .oops .oops__content .content__title .zero_shadow #zero {
@@ -59,10 +74,10 @@ header > nav.navbar {
   width: 150px;
   border-radius: 50%;
   background-color: transparent;
-  border-top: 7px solid #009f4d;
-  border-bottom: 7px solid #009f4d;
-  border-left: 7px solid transparent;
-  border-right: 7px solid transparent;
+  border-top: 6px solid #009f4d;
+  border-bottom: 6px solid #009f4d;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
   animation: borderSpin 5s infinite ease-in;
   position: relative;
 }
