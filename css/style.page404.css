@@ -38,6 +38,7 @@ header > nav.navbar {
 .oops {
   background-image: url("../img/page404/error2.png");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   position: relative;
   background-color: rgba(171, 184, 195, 0.2);
