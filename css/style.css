@@ -62,6 +62,11 @@ body {
   color: #b7b7b7;
 }
 
+.dark-theme footer .footer__column a:hover i, 
+.dark-theme footer .footer__column a:hover h1 {
+  color: white;
+}
+
 .dark-theme footer .footer__column form input {
   background-color: #0b0e0d;
   border-color: rgba(255, 255, 255, 0.2);
