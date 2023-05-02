@@ -45,6 +45,8 @@ body {
 
 .dark-theme header > nav.sticky-nav .navbar_left i,
 .dark-theme header > nav.sticky-nav .navbar_left h1,
+.dark-theme header .navbar_left:hover i,
+.dark-theme header .navbar_left:hover h1,
 .dark-theme header > nav.sticky-nav .navbar_right .nav-item:nth-child(2) i,
 .dark-theme header > nav.sticky-nav .navbar_right .nav-item:nth-child(3) i,
 .dark-theme header .navbar_right .nav-item:nth-child(3) ul li a {
