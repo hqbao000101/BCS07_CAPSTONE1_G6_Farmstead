@@ -1,0 +1,116 @@
+section.about_banner .banner__title h3 {
+    font-weight: 700;
+}
+section.about_banner .banner__title a:hover {
+    color: #fb811e;
+    cursor: pointer;
+}
+section.about_banner .banner__title a {
+    color: #707070;
+    font-weight: bold;
+}
+section.about_banner .banner__title span {
+    color: #707070;
+}
+section.about_banner .img__right {
+    background-image: url(./../img/about/inner-banner.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    top: 0
+}
+.img-responsive {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+    width: 100%;
+}
+/* section.about_number .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+section.about_number .item i {
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    border-radius: 50%;
+    background: rgb(0 159 77 / 4%);
+    font-size: 32px;
+    color: #009f4d;
+    margin-bottom: 30px;
+}
+section.about_number .item h4 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+section.about_number .item p {
+    text-transform: uppercase;
+    font-size: 17px;
+}
+section.about_experience .service__content h4 {
+    transform: translate(-300px, -16px);
+}
+section.about_experience .team__content a {
+    font-weight: bold;
+    color: #060606;
+    font-size: 21px;
+}
+section.about_experience .epx_list img {
+    border-radius: 10px;
+}
+section.about_experience .team__content a:hover {
+    color: #fb811e;
+}
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #060606;
+    font-family: var(--font-volkhov);
+    font-weight: 600;
+}
+.play-view {
+    left: 0;
+    right: 0;
+    top: calc(50% - 40px);
+}
+section.about_product .prod__image img {
+    width: 80%;
+    border-radius: 30px;
+}
+section.about_product .prod__image a i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background-color: white;
+    color: #fb811e;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+}
+.mfp-hide {
+    display: none;
+}
+#small__dlg .modal-content {
+    background-color: black;
+    opacity: 3;
+}
+#small__dlg button {
+    font-size: 30px;
+    color: white;
+    padding: 3px;
+    background-color: black;
+    opacity: 3;
+    border: none;
+}
+footer p.my-5 span a {
+    color: #009f4d;
+}
+footer p.my-5 span a:hover {
+    color: #fb811e;
+    cursor: pointer;
+}
