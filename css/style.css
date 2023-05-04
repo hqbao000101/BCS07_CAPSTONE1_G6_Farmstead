@@ -39,6 +39,7 @@ body {
 
 /* home - navbar */
 .dark-theme header > nav.sticky-nav,
+.dark-theme header .navbar_right .dropdown-menu,
 .dark-theme header .navbar_right .dropdown-menu.dropdown_expand {
   background-color: #222;
 }
@@ -221,7 +222,7 @@ header .navbar_right .dropdown-menu {
 
 header .navbar_right .dropdown-menu.dropdown_expand {
   padding: 20px 0;
-  height: 330px;
+  height: 255px;
 }
 
 header .navbar_right .nav-item:nth-child(3) ul li {
