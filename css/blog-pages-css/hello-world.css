@@ -1,0 +1,217 @@
+nav.post-navigation {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 40px;
+}
+
+.nav-links {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-navigation .nav-links, .posts-navigation .nav-links, .post-navigation .nav-links {
+    display: flex;
+} 
+
+.nav-previous, .posts-navigation .nav-previous, .post-navigation .nav-previous {
+    flex: 1 0 50%;
+}
+
+.nav-previous {
+    position: relative;
+}
+
+.nav-previous a {
+    justify-content: start;
+}
+
+.nav-next a {
+    justify-content: end;
+}
+
+.nav-previous a, .nav-next a {
+    grid-gap: 0px;
+    color: #060606;
+    font-weight: 600;
+    align-items: center;
+}
+
+span.nav-subtitle, span.fa.fa-arrow-right, span.fa.fa-arrow-left {
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    color: #060606;
+}
+
+.single-post-content p a {
+    color: #fb811e;
+}
+
+.author_page_author_card, .author-card {
+    border: 1px solid 30px;
+    padding: 30px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-radius: 8px;
+}
+
+.share-icons a {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    text-align: center;
+    font-size: 18px;
+    color: #69696980;
+}
+
+.share-icons a span.fa {
+    line-height: 30px;
+}
+
+nav.post-navigation {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 40px;
+}
+
+ol.comment-list {
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ol {
+    list-style: decimal;
+}
+
+.comment-list li, .ping-list li {
+    margin-top: 30px;
+    transition: 0.3s ease-in;
+    margin-bottom: 30px;
+    position: relative;
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    border-radius: 8px;
+}
+
+.comment-content {
+    padding: 0px 40px 10px;
+    margin: 5px 0 0;
+    font-size: 16px;
+    padding-bottom: 15px;
+}
+
+.comment-body a {
+    line-height: 25px;
+    background-color: transparent;
+    padding-left: 0;
+    font-size: 18px;
+    line-height: 23px;
+    color: #060606!important;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.comment-body a time {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: #888;
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.comment-list li .reply {
+    position: absolute;
+    padding: 5px 10px;
+    left: 330px;
+    top: 52px;
+}
+
+.comment-body .reply a {
+    font-size: 16px!important;
+    font-weight: 600;
+    color: #009f4d!important;
+}
+
+div#comments label {
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #060606;
+}
+
+.comment-form textarea {
+    margin-bottom: 20px;
+    height: 150px;
+    margin-top: 5px;
+    font-family: inherit;
+    text-align: left;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    align-items: center;
+    min-height: 60px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #060606;
+    width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+div#comments input[type="text"], div#comments input[type="email"], div#comments input[type="url"] {
+    margin-bottom: 20px;
+    height: inherit;
+    margin-top: 5px;
+    border: none;
+    height: inherit;
+    font-family: inherit;
+    text-align: left;
+    display: grid;
+    grid-template-columns: .1fr 1fr;
+    align-items: center;
+    min-height: 60px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    padding: 12px 15px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #060606;
+    width: 100%;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+p.form-submit {
+    text-align: right;
+}
+
+input#submit {
+    text-transform: capitalize;
+    transition: 0.3s ease-in;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    font-weight: 600;
+    background: #fb811e;
+    border: none;
+    color: #fff;
+    border-radius: 30px;
+    transition: all .25s ease-in-out;
+}
