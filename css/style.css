@@ -221,8 +221,11 @@ header .navbar_right .dropdown-menu {
 }
 
 header .navbar_right .dropdown-menu.dropdown_expand {
-  padding: 20px 0;
-  height: 255px;
+  height: 262px;
+}
+
+header .navbar_right .nav-item:nth-child(3) ul li:nth-child(1) {
+  margin-top: 20px;
 }
 
 header .navbar_right .nav-item:nth-child(3) ul li {
