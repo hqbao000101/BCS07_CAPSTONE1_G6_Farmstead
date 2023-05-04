@@ -77,9 +77,6 @@ $(document).ready(function () {
   document.querySelector(
     ".home_sidenav .sidenav__block .block__content .content__item:nth-child(1)"
   ).onclick = function () {
-    // alert(
-    //   "This feature is still under development. Please visit this later !!!"
-    // );
     window.history.back();
   };
   document.querySelector(
