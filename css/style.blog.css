@@ -94,7 +94,7 @@ body a {
 }
 
 .btn-primary:hover {
-    background-color: #009f4d;
+  background-color: #009f4d;
 }
 
 .btn-style:hover {
@@ -113,6 +113,10 @@ body a {
   text-decoration: none;
 }
 
+header h1,
+footer h1 {
+  line-height: 1.2;
+}
 
 /* BANNER  */
 .blog_banner {
@@ -135,7 +139,7 @@ body a {
 }
 
 .blog_banner .banner_content .title h4,
-a {
+.blog_banner .banner_content .title a {
   font-weight: 700;
 }
 
@@ -270,9 +274,10 @@ a.post-thumbnail {
 .layout a.blog-desc:hover {
   color: #fb811e;
 }
-.layout a.url, a.admin {
-    font-size: 17px;
-    color: #fb811e;
+.layout a.url,
+a.admin {
+  font-size: 17px;
+  color: #fb811e;
 }
 
 nav ul li {
