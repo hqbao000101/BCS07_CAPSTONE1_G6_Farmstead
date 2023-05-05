@@ -1,3 +1,35 @@
+/* Dark Theme  */
+.dark-theme a.title-team-28 {
+    display: inline-block;
+    color: #fdfffc;
+}
+
+.dark-theme a{
+    color: #fdfffc;
+}
+
+.dark-theme span.nav-subtitle, .dark-theme span.fa.fa-arrow-right, .dark-theme span.fa.fa-arrow-left {
+    color: #fdfffc;
+}
+
+.dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme h4, .dark-theme h5, .dark-theme h6{
+    color: #fdfffc;
+}
+
+.dark-theme div#comments .comment-form p label{
+    color: #fdfffc;
+}
+
+.dark-theme .comment-form textarea{
+    color: #fdfffc;
+    background-color: #0c0b0b;
+}
+
+/* END DARK THEME  */
+
+
+
+
 nav.post-navigation {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
@@ -114,7 +146,7 @@ ol {
     padding-left: 0;
     font-size: 18px;
     line-height: 23px;
-    color: #060606!important;
+    color: #060606;
     font-weight: 700;
     margin: 0;
     margin-bottom: 5px;
