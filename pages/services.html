@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Farmstead - Services</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -41,8 +44,88 @@
   </head>
 
   <body>
+    <!-- todo: header - navbar -->
     <header>
-      <!-- place navbar here -->
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container navbar_content">
+          <!-- navbar - left -->
+          <a class="navbar-brand navbar_left text-center" href="#">
+            <i class="fa-solid fa-leaf"></i>
+            <h1>Farmstead</h1>
+          </a>
+          <!-- navbar - right -->
+          <div
+            class="collapse navbar-collapse navbar_right"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <!-- item 1 -->
+              <li class="nav-item">
+                <form class="a">
+                  <label for="search">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                  </label>
+                  <input type="text" id="search" />
+                </form>
+              </li>
+              <!-- item 2 -->
+              <li class="nav-item">
+                <i class="gg-moon"></i>
+                <i class="gg-sun d-none"></i>
+              </li>
+              <!-- item 3 - dropdown -->
+              <li id="menu-dropdown" class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+                <!-- dropdown menu -->
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="../index.html">HOME</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/about.html">ABOUT</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown_active" href="./pages/services.html"
+                      >SERVICES</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/blog.html"
+                      >BLOG POSTS</a
+                    >
+                  </li>
+                  <!-- <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="./pages/page404.html"
+                      >404 PAGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./pages/contact.html"
+                      >CONTACT</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <!-- BANNER -->
@@ -58,11 +141,6 @@
         </div>
       </section>
       <!-- END BANNER  -->
-<<<<<<< HEAD
-      <!-- CAROUSEL  -->
-      <section class="services_carousel"></section>
-      <!-- END CAROUSEL  -->
-=======
       <!-- PRODUCTS  -->
       <section class="services_products">
         <div class="container pt-md-5 pt-4">
@@ -139,7 +217,6 @@
         </div>
       </section>
       <!-- END PRODUCTS  -->
->>>>>>> 71eb7fb (services-quality-and-number-v1)
       <!-- QUALITY  -->
       <section class="services_quality py-5">
         <div class="container py-md-5 py-4">
@@ -252,9 +329,104 @@
       </section>
       <!-- END THEME  -->
     </main>
-    <footer>
-      <!-- place footer here -->
+    <!-- todo: footer -->
+    <footer class="py-5">
+      <div class="container py-4">
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-6 col-lg-4 footer__column">
+            <h4>FIND US</h4>
+            <ul>
+              <li>
+                Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.
+              </li>
+              <li>Phone: <a href="tel:+1223456790">+12 23456790</a></li>
+              <li>
+                Email: <a href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>Fax: <a href="tel:+1136721890">+11 367 21890</a></li>
+            </ul>
+          </div>
+          <!-- column 2 -->
+          <div
+            class="col-md-6 col-lg-4 footer__column position-relative mt-5 mt-md-0 order-md-0 order-1"
+          >
+            <a href="#">
+              <i class="fa-solid fa-leaf"></i>
+              <h1>Farmstead</h1>
+            </a>
+            <p>
+              Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+              Aliquam eget turpis ornare, euismod clear surgeon, electronic dui.
+            </p>
+          </div>
+          <!-- column 3 -->
+          <div class="col-lg-4 footer__column mt-5 mt-lg-0">
+            <h4>NEWSLETTER</h4>
+            <p>
+              Subscribe to our mailing list and get updates to your email inbox.
+            </p>
+            <form class="d-flex">
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="user-email"
+              />
+              <button type="button">
+                <i class="fa fa-paper-plane"></i>
+              </button>
+            </form>
+            <div class="footer__social mt-4 pt-2">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
+
+    <!-- todo: back-to-top btn -->
+    <a id="top" class="backTop" href="#">
+      <i class="fa fa-level-up-alt"></i>
+    </a>
+
+    <!-- todo: right side navbar -->
+    <i id="right" class="fa fa-angle-double-right"></i>
+    <i id="left" class="fa fa-angle-double-left"></i> 
+    <section class="home_sidenav">
+      <div class="sidenav__block">
+        <div class="block__content text-center">
+          <!-- back -->
+          <div class="content__item">
+            <i class="fa fa-arrow-left"></i>
+            <p>Back</p>
+          </div>
+          <!-- download -->
+          <div class="content__item">
+            <i class="fa fa-download"></i>
+            <p>Download</p>
+          </div>
+          <!-- buy -->
+          <div class="content__item">
+            <i class="fa fa-shopping-cart"></i>
+            <p>Buy</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -287,5 +459,8 @@
     <script>
       $(".counter").countUp();
     </script>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
   </body>
 </html>
