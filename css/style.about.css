@@ -107,10 +107,3 @@ section.about_product .prod__image a i {
     opacity: 3;
     border: none;
 }
-footer p.my-5 span a {
-    color: #009f4d;
-}
-footer p.my-5 span a:hover {
-    color: #fb811e;
-    cursor: pointer;
-}
