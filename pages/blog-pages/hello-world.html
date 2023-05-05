@@ -36,17 +36,98 @@
       referrerpolicy="no-referrer"
     />
 
-    <link rel="stylesheet" href="/CAPSTONE1_G6_Farmstead/css/style.css" />
-    <link rel="stylesheet" href="/CAPSTONE1_G6_Farmstead/css/style.blog.css" />
+    <!-- ! GG-Moon CSS -->
     <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
       rel="stylesheet"
-      href="/CAPSTONE1_G6_Farmstead/css/blog-pages-css/hello-world.css"
     />
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/sun.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style.blog.css" />
+    <link rel="stylesheet" href="/css/blog-pages-css/hello-world.css" />
   </head>
 
   <body>
+    <!-- todo: header - navbar -->
     <header>
-      <!-- place navbar here -->
+      <nav class="navbar navbar-expand navbar-light">
+        <div class="container navbar_content">
+          <!-- navbar - left -->
+          <a class="navbar-brand navbar_left text-center" href="#">
+            <i class="fa-solid fa-leaf"></i>
+            <h1>Farmstead</h1>
+          </a>
+          <!-- navbar - right -->
+          <div
+            class="collapse navbar-collapse navbar_right"
+            id="navbarNavDropdown"
+          >
+            <ul class="navbar-nav">
+              <!-- item 1 -->
+              <li class="nav-item">
+                <form class="a">
+                  <label for="search">
+                    <i class="fa-solid fa-magnifying-glass"> </i>
+                  </label>
+                  <input type="text" id="search" />
+                </form>
+              </li>
+              <!-- item 2 -->
+              <li class="nav-item">
+                <i class="gg-moon"></i>
+                <i class="gg-sun d-none"></i>
+              </li>
+              <!-- item 3 - dropdown -->
+              <li id="menu-dropdown" class="nav-item dropdown">
+                <a
+                  class="nav-link"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa fa-bars"></i>
+                </a>
+                <!-- dropdown menu -->
+                <ul
+                  class="dropdown-menu text-center"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="dropdown-item" href="../../index.html">HOME</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../about.html">ABOUT</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../services.html">SERVICES</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item dropdown_active" href="../blog.html"
+                      >BLOG POSTS</a
+                    >
+                  </li>
+                  <!-- <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                  </li> -->
+                  <li>
+                    <a class="dropdown-item" href="../page404.html">404 PAGE</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../contact.html">CONTACT</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
       <!-- BANNER -->
@@ -55,7 +136,7 @@
           <div class="title">
             <h4>Blog Posts</h4>
             <ul>
-              <a href="../index.html">Home</a
+              <a href="../../index.html">Home</a
               >&nbsp;&nbsp;&#187;&nbsp;&nbsp;Blog page
             </ul>
           </div>
@@ -73,11 +154,11 @@
                     <div class="post-content">
                       <div class="post-thumbnail">
                         <img
-                            src="/CAPSTONE1_G6_Farmstead/img/blog/blog_img1.jpg"
-                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
-                            alt="Hello world!"
-                            decoding="async"
-                          />
+                          src="/img/blog/blog_img1.jpg"
+                          class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                          alt="Hello world!"
+                          decoding="async"
+                        />
                       </div>
                       <!-- .post-thumbnail -->
                     </div>
@@ -91,11 +172,7 @@
                     -
                     <span class="byline">
                       by <span class="author vcard"></span></span></a
-                  ><a
-                    class="url fn n"
-                    href="#"
-                    >W3Layouts</a
-                  >
+                  ><a class="url fn n" href="#">W3Layouts</a>
 
                   <div class="entry-content">
                     <div class="single-post-content">
@@ -112,9 +189,7 @@
                       >
                         <div class="row">
                           <div class="author-left col-sm-3 mb-sm-0 mb-4">
-                            <a
-                              href="#"
-                            >
+                            <a href="#">
                               <img
                                 class="img-fluid"
                                 src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=200&amp;d=mm&amp;r=g"
@@ -126,11 +201,7 @@
                             class="author-right col-sm-9 position-relative align-self"
                           >
                             <h4>
-                              <a
-                                href="#"
-                                class="title-team-28"
-                                >W3Layouts</a
-                              >
+                              <a href="#" class="title-team-28">W3Layouts</a>
                             </h4>
                             <p class="para-team mb-0">
                               We help developers, designers and website owner's
@@ -164,9 +235,7 @@
                     <h2 class="screen-reader-text">Post navigation</h2>
                     <div class="nav-links">
                       <div class="nav-previous">
-                        <a
-                          href="#"
-                          rel="prev"
+                        <a href="#" rel="prev"
                           ><span
                             class="fa fa-arrow-left"
                             aria-hidden="true"
@@ -217,8 +286,7 @@
                               <!-- .comment-author -->
 
                               <div class="comment-metadata">
-                                <a
-                                  href="#"
+                                <a href="#"
                                   ><time datetime="2021-03-24T10:46:52+00:00"
                                     >March 24, 2021 at 10:46 am</time
                                   ></a
@@ -571,8 +639,73 @@
         </div>
       </section>
     </main>
-    <footer>
-      <!-- place footer here -->
+    <!-- todo: footer -->
+    <footer class="py-5">
+      <div class="container py-4">
+        <div class="row">
+          <!-- column 1 -->
+          <div class="col-md-6 col-lg-4 footer__column">
+            <h4>FIND US</h4>
+            <ul>
+              <li>
+                Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.
+              </li>
+              <li>Phone: <a href="tel:+1223456790">+12 23456790</a></li>
+              <li>
+                Email: <a href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li>Fax: <a href="tel:+1136721890">+11 367 21890</a></li>
+            </ul>
+          </div>
+          <!-- column 2 -->
+          <div
+            class="col-md-6 col-lg-4 footer__column position-relative mt-5 mt-md-0 order-md-0 order-1"
+          >
+            <a href="#">
+              <i class="fa-solid fa-leaf"></i>
+              <h1>Farmstead</h1>
+            </a>
+            <p>
+              Duis imperdiet sapien tortor, vitae congue diam auctor vitae.
+              Aliquam eget turpis ornare, euismod clear surgeon, electronic dui.
+            </p>
+          </div>
+          <!-- column 3 -->
+          <div class="col-lg-4 footer__column mt-5 mt-lg-0">
+            <h4>NEWSLETTER</h4>
+            <p>
+              Subscribe to our mailing list and get updates to your email inbox.
+            </p>
+            <form class="d-flex">
+              <input
+                type="email"
+                placeholder="Email Address"
+                name="user-email"
+              />
+              <button type="button">
+                <i class="fa fa-paper-plane"></i>
+              </button>
+            </form>
+            <div class="footer__social mt-4 pt-2">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-google-plus-g"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- Bootstrap JavaScript Libraries -->
     <script
@@ -586,5 +719,15 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Jquery  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="../../js/script.js"></script>
   </body>
 </html>

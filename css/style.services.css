@@ -148,6 +148,8 @@ footer h1 {
 .services_theme {
   background-image: url("../img/services/img3.jpg");
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services_theme .theme_overlay {
