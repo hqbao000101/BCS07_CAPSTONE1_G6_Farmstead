@@ -1,0 +1,80 @@
+body {
+  font-family: var(--font-source);
+}
+section.contact_contactUs .show_msg,
+section.contact_contactUs h6,
+.banner__title h3 {
+  font-family: var(--font-volkhov);
+}
+section.about_banner .banner__title h3 {
+  font-weight: 700;
+}
+section.about_banner .banner__title a:hover {
+  color: #fb811e;
+  cursor: pointer;
+}
+section.about_banner .banner__title a {
+  color: #707070;
+  font-weight: bold;
+}
+section.about_banner .banner__title span {
+  color: #707070;
+}
+section.about_banner .img__right {
+  background-image: url(./../img/about/inner-banner.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
+}
+h2 {
+  font-size: 40px;
+  line-height: 50px;
+  color: #060606;
+  font-family: var(--font-volkhov);
+  font-weight: 600;
+}
+section.contact_contactUs .item__list .row__infor i {
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fb811e;
+  margin-right: 20px;
+}
+section.contact_contactUs .item__list .row__infor {
+  margin-top: 20px;
+}
+section.contact_contactUs .item__list span {
+  display: inline-block;
+  color: #707070;
+}
+section.contact_contactUs .item__list h6 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+}
+section.contact_contactUs .item__list a {
+  display: block;
+  color: #707070;
+}
+section.contact_contactUs .item__list a:hover {
+  color: #fb811e;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+section.contact_contactUs input:focus, section.contact_contactUs textarea:focus {
+    /* border: #fb811e; */
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #fb811e;
+    box-shadow: none;
+}
