@@ -45,7 +45,8 @@ a {
     text-transform: capitalize;
 }
 
-.services_banner .banner_content .title h4, a{
+.services_banner .banner_content .title h4,
+.services_banner .banner_content .title a{
     font-weight: 700;
 }
 
