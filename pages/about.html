@@ -304,6 +304,32 @@
         </div>
       </section>
 
+      <!-- about_product -->
+      <section class="about_product middle-section py-5">
+        <div class="container">
+          <div class="heading text-center">
+            <h2 class="title-style">We Provide only fresh and healthy Products!</h2>
+            <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.</p>
+          </div>
+          <div class="prod__image position-relative mt-5">
+            <img src="./../img/about/video.jpg" alt="Video popup">
+            <a id="link" class="open-popup-link popup-with-zoom-anim text-center play-view position-absolute" data-toggle="modal" data-src="https://www.youtube.com/embed/Wl3nAdJfWpo" data-target="#small__dlg">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+          <div id="small__dlg" class="zoom-anim-dialog mfp-hide modal" tabindex="-1" role="dialog">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-content">
+              <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- todo: carousel -->
       <section class="home_carousel py-5 bg-info">
         <div class="container">
@@ -567,6 +593,26 @@
             $('#small__dlg').modal('hide');
         });
     </script>
+    <!-- <script>
+      $(document).ready(function () {
+  $(".popup-with-zoom-anim").magnificPopup({
+    type: "inline",
+
+    fixedContentPos: false,
+    fixedBgPos: true,
+
+    overflowY: "auto",
+
+    closeBtnInside: true,
+    preloader: false,
+
+    midClick: true,
+    removalDelay: 300,
+    mainClass: "my-mfp-zoom-in"
+  });
+});
+
+    </script> -->
     <!-- ! JS -->
     <script src="./../js/script.js"></script>
   </body>

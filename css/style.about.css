@@ -1,3 +1,17 @@
+body {
+    font-family: var(--font-source);
+}
+section.about_banner .banner__title h3,
+section.about_experience .team__content a {
+    font-family: var(--font-volkhov);
+}
+h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #060606;
+    font-family: var(--font-volkhov);
+    font-weight: 600;
+}
 section.about_banner .banner__title h3 {
     font-weight: 700;
 }
@@ -28,11 +42,6 @@ section.about_banner .img__right {
     border-radius: 8px;
     width: 100%;
 }
-/* section.about_number .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 section.about_number .item i {
     text-align: center;
     width: 80px;
@@ -66,21 +75,14 @@ section.about_experience .epx_list img {
 section.about_experience .team__content a:hover {
     color: #fb811e;
 }
-h2 {
-    font-size: 40px;
-    line-height: 50px;
-    color: #060606;
-    font-family: var(--font-volkhov);
-    font-weight: 600;
-}
-.play-view {
+section.about_product .play-view {
     left: 0;
     right: 0;
     top: calc(50% - 40px);
 }
 section.about_product .prod__image img {
-    width: 80%;
-    border-radius: 30px;
+    width: 100%;
+    border-radius: 10px;
 }
 section.about_product .prod__image a i {
     width: 60px;
@@ -91,6 +93,15 @@ section.about_product .prod__image a i {
     border-radius: 50%;
     text-align: center;
     vertical-align: middle;
+    z-index: 2;
+}
+section.about_product .prod__image a i:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+section.about_product .middle-section {
+    max-width: 950px;
+    margin: 0 auto;
 }
 .mfp-hide {
     display: none;
@@ -105,5 +116,26 @@ section.about_product .prod__image a i {
     padding: 3px;
     background-color: black;
     opacity: 3;
-    border: none;
+    border: none;  
 }
+
+#small__dlg {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#small__dlg iframe {
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+.mfp-close-btn-in .mfp-close {
+    color: #fff;
+}
+.mfp-close,
+.mfp-close:active {
+    top: -40px;
+}
+  
