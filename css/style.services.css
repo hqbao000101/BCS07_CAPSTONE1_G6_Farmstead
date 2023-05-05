@@ -24,6 +24,12 @@ a {
     background-color: transparent;
 }
 
+/***** dark-theme *****/
+.dark-theme .services_banner .banner_content ul {
+    color: #b7b7b7;
+}
+/***** End dark-theme *****/
+
 
 /* BANNER  */
 .services_banner{
