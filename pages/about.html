@@ -52,6 +52,14 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
     />
+    <!-- magnific-popup -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css"
+      integrity="sha512-WEQNv9d3+sqyHjrqUZobDhFARZDko2wpWdfcpv44lsypsSuMO0kHGd3MQ8rrsBn/Qa39VojphdU6CMkpJUmDVw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <!-- ! CSS: Home -->
     <link rel="stylesheet" href="./../css/style.css" />
@@ -198,30 +206,31 @@
       <!-- number -->
       <section class="about_number py-5 text-center">
         <div class="container">
-            <div class="row">
-                <div class="item col-md-3 col-6 text-center">
-                    <i class="fa fa-bullhorn"></i>
-                    <h4 class="counter">1,286</h4>
-                    <p>OUR FARMS</p>
-                </div>
-                <div class="item col-md-3 col-6 text-center">
-                    <i class="fa fa-shopping-basket"></i>
-                    <h4 class="counter">36,076</h4>
-                    <p>AGRICULTURE PRODUCTS</p>
-                </div>
-                <div class="item col-md-3 col-6 text-center">
-                    <i class="fa fa-face-smile"></i>
-                    <h4 class="counter">16,300</h4>
-                    <p>HAPPY CUSTOMERS</p>
-                </div>
-                <div class="item col-md-3 col-6 text-center">
-                    <i class="fa fa-trophy"></i>
-                    <h4 class="counter">10,630</h4>
-                    <p>AWARDS WON</p>
-                </div>
+          <div class="row">
+            <div class="item col-md-3 col-6 text-center">
+              <i class="fa fa-bullhorn"></i>
+              <h4 class="counter">1,286</h4>
+              <p>OUR FARMS</p>
             </div>
+            <div class="item col-md-3 col-6 text-center">
+              <i class="fa fa-shopping-basket"></i>
+              <h4 class="counter">36,076</h4>
+              <p>AGRICULTURE PRODUCTS</p>
+            </div>
+            <div class="item col-md-3 col-6 text-center">
+              <i class="fa fa-face-smile"></i>
+              <h4 class="counter">16,300</h4>
+              <p>HAPPY CUSTOMERS</p>
+            </div>
+            <div class="item col-md-3 col-6 text-center">
+              <i class="fa fa-trophy"></i>
+              <h4 class="counter">10,630</h4>
+              <p>AWARDS WON</p>
+            </div>
+          </div>
         </div>
       </section>
+
       <!-- todo: about_experience -->
       <section class="about_experience home_service py-5">
         <div class="container">
@@ -230,11 +239,16 @@
             <h4>Team</h4>
             <div class="col-md-6 position-relative pe-md-5 heading py-3">
               <h3>Our Team</h3>
-              <h2>Experienced and <br> Professional Team</h2>
+              <h2>
+                Experienced and <br />
+                Professional Team
+              </h2>
             </div>
             <div class="col-md-6 position-relative heading">
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit accusantium doloremque, eaque ipsa quae ab illo inventore.Sed ut perspiciatis unde omnis iste natus error sit.
+                Sed ut perspiciatis unde omnis iste natus error sit accusantium
+                doloremque, eaque ipsa quae ab illo inventore.Sed ut
+                perspiciatis unde omnis iste natus error sit.
               </p>
             </div>
           </div>
@@ -243,7 +257,24 @@
             <!-- item 1 -->
             <div class="col-md-6 col-lg-4 p-3">
               <div class="card__item">
-                <div class="card__image">
+                <div class="card__image epx_item position-relative">
+                  <div class="epx__item__overlay">
+                    <div class="overlay__content">
+                      <h4><a href="#">Meet Me</a></h4>
+                      <p>Lorem ipsum dolor sit amet,Ea consequuntur</p>
+                    </div>
+                    <div class="overlay__icon">
+                      <a
+                        href="#"
+                        data-fancybox="gallery"
+                        data-caption="Design 1"
+                      >
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-google-plus-g"></i>
+                      </a>
+                    </div>
+                  </div>
                   <a href="#team">
                     <img
                       class="img-fluid img-responsive py-3 px-3"
@@ -254,16 +285,31 @@
                 </div>
                 <div class="team__content text-center">
                   <a href="#">Shona Leer</a>
-                  <p>
-                    FOOD PRODUCTION
-                  </p>
+                  <p>FOOD PRODUCTION</p>
                 </div>
               </div>
             </div>
             <!-- item 2 -->
             <div class="col-md-6 col-lg-4 p-3">
               <div class="card__item">
-                <div class="card__image">
+                <div class="card__image epx_item position-relative">
+                  <div class="epx__item__overlay">
+                    <div class="overlay__content">
+                      <h4><a href="#">Meet Me</a></h4>
+                      <p>Lorem ipsum dolor sit amet,Ea consequuntur</p>
+                    </div>
+                    <div class="overlay__icon">
+                      <a
+                        href="#"
+                        data-fancybox="gallery"
+                        data-caption="Design 1"
+                      >
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-google-plus-g"></i>
+                      </a>
+                    </div>
+                  </div>
                   <a href="#team">
                     <img
                       class="img-fluid img-responsive py-3 px-3"
@@ -274,16 +320,31 @@
                 </div>
                 <div class="team__content text-center">
                   <a href="#">Brock Lee</a>
-                  <p>
-                    FARMER
-                  </p>
+                  <p>FARMER</p>
                 </div>
               </div>
             </div>
             <!-- item 3 -->
             <div class="col-md-6 col-lg-4 p-3 mx-md-auto">
               <div class="card__item">
-                <div class="card__image">
+                <div class="card__image epx_item position-relative">
+                  <div class="epx__item__overlay">
+                    <div class="overlay__content">
+                      <h4><a href="#">Meet Me</a></h4>
+                      <p>Lorem ipsum dolor sit amet,Ea consequuntur</p>
+                    </div>
+                    <div class="overlay__icon">
+                      <a
+                        href="#"
+                        data-fancybox="gallery"
+                        data-caption="Design 1"
+                      >
+                      <i class="fa-brands fa-facebook-f"></i>
+                      <i class="fa-brands fa-twitter"></i>
+                      <i class="fa-brands fa-google-plus-g"></i>
+                      </a>
+                    </div>
+                  </div>
                   <a href="#team">
                     <img
                       class="img-fluid img-responsive py-3 px-3"
@@ -294,9 +355,7 @@
                 </div>
                 <div class="team__content text-center">
                   <a href="#">Maya Didas</a>
-                  <p>
-                    HARVESTER
-                  </p>
+                  <p>HARVESTER</p>
                 </div>
               </div>
             </div>
@@ -308,28 +367,46 @@
       <section class="about_product middle-section py-5">
         <div class="container">
           <div class="heading text-center">
-            <h2 class="title-style">We Provide only fresh and healthy Products!</h2>
-            <p class="mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.</p>
+            <h2 class="title-style">
+              We Provide only fresh and healthy Products!
+            </h2>
+            <p class="mt-3">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem
+              ipsum dolor sit amet elit consec tetur adipisi elit. Lorem ipsum
+              dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus
+              explicabo officia.
+            </p>
           </div>
           <div class="prod__image position-relative mt-5">
-            <img src="./../img/about/video.jpg" alt="Video popup">
-            <a id="link" class="open-popup-link popup-with-zoom-anim text-center play-view position-absolute" data-toggle="modal" data-src="https://www.youtube.com/embed/Wl3nAdJfWpo" data-target="#small__dlg">
+            <img src="./../img/about/video.jpg" alt="Video popup" />
+            <a
+              href="#small__dlg"
+              class="open-popup-link popup-with-zoom-anim text-center play-view position-absolute"
+              data-toggle="modal"
+              data-src="https://www.youtube.com/embed/Wl3nAdJfWpo"
+              data-target="#small__dlg"
+            >
               <i class="fa-solid fa-play"></i>
             </a>
           </div>
-          <div id="small__dlg" class="zoom-anim-dialog mfp-hide modal" tabindex="-1" role="dialog">
-            <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-content">
-              <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always"></iframe>
+          <div
+            id="small__dlg"
+            class="zoom-anim-dialog mfp-hide"
+            tabindex="-1"
+            role="dialog"
+          >
+            <div class="zoom-anim-dialog">
+              <iframe
+                src="https://www.youtube.com/embed/Wl3nAdJfWpo"
+                frameborder="0"
+                allow="autoplay; fullscreen"
+                allowfullscreen=""
+              ></iframe>
             </div>
           </div>
         </div>
       </section>
+
       <!-- todo: carousel -->
       <section class="home_carousel py-5 bg-info">
         <div class="container">
@@ -564,24 +641,24 @@
 
     <!-- ! Counting-Up-To-Numerical -->
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  ></script>
-  <script src="./../js/Counting-Up-To-Numerical/jquery.countup.js"></script>
-  <script>
-    $(".counter").countUp({
-      time: 500,
-      delay: 1,
-    });
-  </script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./../js/Counting-Up-To-Numerical/jquery.countup.js"></script>
+    <script>
+      $(".counter").countUp({
+        time: 500,
+        delay: 1,
+      });
+    </script>
 
     <!-- ! Fancybox Popup JS -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 
-     <!-- ! Show video popup -->
-    <script>
+    <!-- ! Show video popup -->
+    <!-- <script>
         $('#link').click(function () {
             var src = 'https://www.youtube.com/embed/Wl3nAdJfWpo';
             $('#small__dlg').modal('show');
@@ -592,27 +669,33 @@
             $('#small__dlg iframe').removeAttr('src');
             $('#small__dlg').modal('hide');
         });
-    </script>
-    <!-- <script>
-      $(document).ready(function () {
-  $(".popup-with-zoom-anim").magnificPopup({
-    type: "inline",
-
-    fixedContentPos: false,
-    fixedBgPos: true,
-
-    overflowY: "auto",
-
-    closeBtnInside: true,
-    preloader: false,
-
-    midClick: true,
-    removalDelay: 300,
-    mainClass: "my-mfp-zoom-in"
-  });
-});
-
     </script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"
+      integrity="sha512-C1zvdb9R55RAkl6xCLTPt+Wmcz6s+ccOvcr6G57lbm8M2fbgn2SUjUJbQ13fEyjuLViwe97uJvwa1EUf4F1Akw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".popup-with-zoom-anim").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
+        });
+      });
+    </script>
     <!-- ! JS -->
     <script src="./../js/script.js"></script>
   </body>

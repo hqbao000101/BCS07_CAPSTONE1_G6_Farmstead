@@ -1,141 +1,232 @@
 body {
-    font-family: var(--font-source);
+  font-family: var(--font-source);
 }
 section.about_banner .banner__title h3,
-section.about_experience .team__content a {
-    font-family: var(--font-volkhov);
+section.about_experience .team__content a,
+section.about_experience .overlay__content h4 {
+  font-family: var(--font-volkhov);
 }
 h2 {
-    font-size: 40px;
-    line-height: 50px;
-    color: #060606;
-    font-family: var(--font-volkhov);
-    font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+  color: #060606;
+  font-family: var(--font-volkhov);
+  font-weight: 600;
 }
 section.about_banner .banner__title h3 {
-    font-weight: 700;
+  font-weight: 700;
 }
 section.about_banner .banner__title a:hover {
-    color: #fb811e;
-    cursor: pointer;
+  color: #fb811e;
+  cursor: pointer;
 }
 section.about_banner .banner__title a {
-    color: #707070;
-    font-weight: bold;
+  color: #707070;
+  font-weight: bold;
 }
 section.about_banner .banner__title span {
-    color: #707070;
+  color: #707070;
 }
 section.about_banner .img__right {
-    background-image: url(./../img/about/inner-banner.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    width: 100%;
-    height: 300px;
-    top: 0
+  background-image: url(./../img/about/inner-banner.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 0;
 }
 .img-responsive {
-    max-width: 100%;
-    display: block;
-    border-radius: 8px;
-    width: 100%;
+  max-width: 100%;
+  display: block;
+  border-radius: 8px;
+  width: 100%;
 }
 section.about_number .item i {
-    text-align: center;
-    width: 80px;
-    height: 80px;
-    line-height: 80px;
-    border-radius: 50%;
-    background: rgb(0 159 77 / 4%);
-    font-size: 32px;
-    color: #009f4d;
-    margin-bottom: 30px;
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  border-radius: 50%;
+  background: rgb(0 159 77 / 4%);
+  font-size: 32px;
+  color: #009f4d;
+  margin-bottom: 30px;
 }
 section.about_number .item h4 {
-    font-size: 3rem;
-    font-weight: 600;
+  font-size: 3rem;
+  font-weight: 600;
 }
 section.about_number .item p {
-    text-transform: uppercase;
-    font-size: 17px;
+  text-transform: uppercase;
+  font-size: 17px;
 }
 section.about_experience .service__content h4 {
-    transform: translate(-300px, -16px);
+  transform: translate(-300px, -16px);
 }
 section.about_experience .team__content a {
-    font-weight: bold;
-    color: #060606;
-    font-size: 21px;
+  font-weight: bold;
+  color: #060606;
+  font-size: 21px;
 }
 section.about_experience .epx_list img {
-    border-radius: 10px;
+  border-radius: 10px;
 }
-section.about_experience .team__content a:hover {
-    color: #fb811e;
+section.about_experience .team__content a:hover,
+section.about_experience .overlay__content a:hover
+{
+  color: #fb811e;
 }
-section.about_product .play-view {
+.section.about_experience .card__item .epx_item {
+    position: relative;
+    /* chỉ hiển thị chữ bên trong vùng hiển thị */
+    overflow: hidden;
+  }
+  section.about_experience .card__item .epx_item:hover .epx__item__overlay {
+    opacity: 1;
+  }
+  section.about_experience .card__item .epx__item__overlay {
+    position: absolute;
+    /* lớp overlay cho 4 hướng = 0 thì nó phủ full */
+    top: 0;
     left: 0;
     right: 0;
-    top: calc(50% - 40px);
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  section.about_experience .card__item .overlay__icon {
+    text-align: center;
+    margin-top: 80px;
+  }
+  section.about_experience .card__item 
+    .overlay__content {
+    text-align: center;
+    transform: translateY(40px) scale(1.5);
+  }
+  section.about_experience .card__item 
+    .overlay__content h4 a {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    transform: translateY(20px);
+  }
+  section.about_experience .card__item 
+    .overlay__content p {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  section.about_experience .epx_item:hover .overlay__content {
+    transform: translateY(0);
+    transition: all 0.5s;
+  }
+  section.about_experience .card__item .overlay__icon i {
+    padding: 15px;
+    transform: translateY(20px);
+    color: white;
+    border-radius: 10px;
+  }
+  section.about_experience .epx_item:hover .overlay__icon i {
+    transform: translateY(0);
+    transition: all 0.5s;
+  }
+  section.about_experience .card__item .overlay__icon a i:hover {
+    cursor: pointer;
+    color: #fb811e;
+  }
+section.about_product .play-view {
+  left: 0;
+  right: 0;
+  top: calc(50% - 40px);
 }
 section.about_product .prod__image img {
-    width: 100%;
-    border-radius: 10px;
+  width: 100%;
+  border-radius: 10px;
 }
 section.about_product .prod__image a i {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    background-color: white;
-    color: #fb811e;
-    border-radius: 50%;
-    text-align: center;
-    vertical-align: middle;
-    z-index: 2;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background-color: white;
+  color: #fb811e;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 2;
 }
 section.about_product .prod__image a i:hover {
-    transform: scale(1.1);
-    transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
 }
 section.about_product .middle-section {
-    max-width: 950px;
-    margin: 0 auto;
+  max-width: 950px;
+  margin: 0 auto;
 }
-.mfp-hide {
-    display: none;
-}
-#small__dlg .modal-content {
-    background-color: black;
-    opacity: 3;
-}
-#small__dlg button {
-    font-size: 30px;
-    color: white;
-    padding: 3px;
-    background-color: black;
-    opacity: 3;
-    border: none;  
-}
-
 #small__dlg {
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 100;
 }
 #small__dlg iframe {
-    width: 100%;
-    height: 420px;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: 420px;
+  display: block;
+  border-radius: 10px;
 }
 .mfp-close-btn-in .mfp-close {
-    color: #fff;
+  color: #fff;
 }
 .mfp-close,
 .mfp-close:active {
-    top: -40px;
+  top: -40px;
 }
-  
+
+/**
+     * Fade-zoom animation for first dialog
+     */
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.95;
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
