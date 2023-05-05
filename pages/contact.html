@@ -10,7 +10,7 @@
     />
 
     <!-- Website Icon -->
-    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./../img/favicon.png" type="image/x-icon" />
 
     <!-- ! Bootstrap CSS v5.2.1 -->
     <link
@@ -66,7 +66,7 @@
       <nav class="navbar navbar-expand navbar-light">
         <div class="container navbar_content">
           <!-- navbar - left -->
-          <a class="navbar-brand navbar_left text-center" href="#">
+          <a class="navbar-brand navbar_left text-center" href="../index.html">
             <i class="fa-solid fa-leaf"></i>
             <h1>Farmstead</h1>
           </a>
@@ -108,12 +108,10 @@
                   aria-labelledby="navbarDropdownMenuLink"
                 >
                   <li>
-                    <a class="dropdown-item" href="./../index.html">HOME</a>
+                    <a class="dropdown-item" href="../index.html">HOME</a>
                   </li>
                   <li>
-                    <a class="dropdown-item dropdown_active" href="./about.html"
-                      >ABOUT</a
-                    >
+                    <a class="dropdown-item" href="./about.html">ABOUT</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="./services.html">SERVICES</a>
@@ -121,15 +119,17 @@
                   <li>
                     <a class="dropdown-item" href="./blog.html">BLOG POSTS</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
+                  <!-- <li><a class="dropdown-item" href="#">LANDING PAGE</a></li>
                   <li>
                     <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
-                  </li>
+                  </li> -->
                   <li>
                     <a class="dropdown-item" href="./page404.html">404 PAGE</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./contact.html">CONTACT</a>
+                    <a class="dropdown-item dropdown_active" href="#"
+                      >CONTACT</a
+                    >
                   </li>
                 </ul>
               </li>
@@ -159,9 +159,12 @@
       <!-- todo: content photo -->
       <section class="contact_contactUs py-5">
         <div class="container py-md-5 py-4 ContactPage">
-          <div class="row mx-auto pt-lg-4 pt-md-5 pt-4 leaders__wrapper" style="max-width:1000px">
+          <div
+            class="row mx-auto pt-lg-4 pt-md-5 pt-4 leaders__wrapper"
+            style="max-width: 1000px"
+          >
             <!-- left -->
-            <div class="col-lg-6 col-md-5 pe-lg-5 mb-5">
+            <div class="col-md-5 mb-5">
               <div class="leaders__content">
                 <div class="heading">
                   <h3>Get in touch</h3>
@@ -196,31 +199,62 @@
                       <a href="mailto:info@support.com">info@support.com</a>
                     </div>
                   </div>
+                </div>
               </div>
             </div>
-          </div>
             <!-- FORM right -->
-            <div class="col-lg-6 col-md-5 mt-lg-0 mt-5 heading">
+            <div class="col-md-7 mt-lg-0 mt-5 heading">
               <h5 class="mb-3 text-success" id="show_msg"></h5>
               <form action="" class="submit-form">
                 <div class="mb-3">
-                  <input type="text"
-                    class="form-control" name="fr_name" id="fr_name" placeholder="Your name*" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="fr_name"
+                    id="fr_name"
+                    placeholder="Your name*"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
-                  <input type="email" class="form-control" name="fr_email" id="fr_email" placeholder="Your email*" required>
+                  <input
+                    type="email"
+                    class="form-control"
+                    name="fr_email"
+                    id="fr_email"
+                    placeholder="Your email*"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
-                  <input type="text"
-                    class="form-control" name="subject" id="fr_subject" placeholder="Subject*" required>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="fr_subject"
+                    placeholder="Subject*"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
-                  <input type="url"
-                    class="form-control" name="fr_url" id="fr_url" placeholder="Website URL*" required>
+                  <input
+                    type="url"
+                    class="form-control"
+                    name="fr_url"
+                    id="fr_url"
+                    placeholder="Website URL*"
+                    required
+                  />
                 </div>
                 <div class="mb-3">
                   <textarea
-                    class="form-control" name="fr_mgs" id="fr_mgs" rows="5" placeholder="Type your message here*" required></textarea>
+                    class="form-control"
+                    name="fr_mgs"
+                    id="fr_mgs"
+                    rows="5"
+                    placeholder="Type your message here*"
+                    required
+                  ></textarea>
                 </div>
                 <button class="mt-lg-5 mt-4" onclick="showSuccessMsg()">
                   <a href="#">SEND MESSAGE</a>
@@ -234,14 +268,14 @@
       <!-- map -->
       <section class="contact_map">
         <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635432.7245980062!2d-0.101599!3d51.528642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2spl!4v1683274001753!5m2!1sen!2spl"
-        width=100%
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d635432.7245980062!2d-0.101599!3d51.528642!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C%20UK!5e0!3m2!1sen!2spl!4v1683274001753!5m2!1sen!2spl"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
 
@@ -267,7 +301,7 @@
           <div
             class="col-md-6 col-lg-4 footer__column position-relative mt-5 mt-md-0 order-md-0 order-1"
           >
-            <a href="#">
+            <a href="../index.html">
               <i class="fa-solid fa-leaf"></i>
               <h1>Farmstead</h1>
             </a>
@@ -370,10 +404,13 @@
     ></script>
     <script>
       function showSuccessMsg() {
-        document.getElementById("show_msg").innerHTML = "We got your details. We will contact you soon";
+        document.getElementById("show_msg").innerHTML =
+          "We got your details. We will contact you soon";
         console.log("hide");
       }
     </script>
+
+    <!-- ! JS -->
     <script src="./../js/script.js"></script>
   </body>
 </html>
