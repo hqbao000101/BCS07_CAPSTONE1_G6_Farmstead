@@ -9,9 +9,6 @@ html {
 }
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -117,6 +114,58 @@ header h1,
 footer h1 {
   line-height: 1.2;
 }
+
+/***** dark-theme *****/
+.dark-theme .services_banner .banner_content ul {
+  color: #b7b7b7;
+}
+
+.dark-theme .card {
+  background-color: #27282b;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.dark-theme .card h6 {
+  color: #b7b7b7;
+}
+
+.dark-theme .card a.blog-desc {
+  color: #fdfffc;
+}
+
+.dark-theme input.search-field {
+  color: #b7b7b7;
+  background: #222222;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme .widget {
+  background: #222222;
+}
+
+.dark-theme .widget.widget_recent_entries ul li a,
+.dark-theme .widget.widget_archive ul li a,
+.dark-theme .widget.widget_categories ul li a,
+.dark-theme .widget.widget_meta ul li a {
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fdfffc;
+}
+
+.dark-theme h2.widget-title {
+  color: #fdfffc;
+  font-weight: 600;
+}
+
+.dark-theme .widget.widget_archive ul li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark-theme a.page-numbers {
+  color: #fdfffc;
+  font-weight: 600;
+}
+/***** End dark-theme *****/
 
 /* BANNER  */
 .blog_banner {
