@@ -1,6 +1,14 @@
 body {
   font-family: var(--font-source);
 }
+
+/***** dark-theme *****/
+.dark-theme section.about_banner .banner__title a,
+.dark-theme section.about_banner .banner__title span {
+  color: #b7b7b7;
+}
+/***** End dark-theme *****/
+
 section.about_banner .banner__title h3,
 section.about_experience .team__content a,
 section.about_experience .overlay__content h4 {
@@ -27,7 +35,7 @@ section.about_banner .banner__title a {
 section.about_banner .banner__title span {
   color: #707070;
 }
-section.about_banner .img__right {
+section.about_banner {
   background-image: url(./../img/about/inner-banner.png);
   background-position: bottom;
   background-repeat: no-repeat;
@@ -70,7 +78,7 @@ section.about_experience .team__content a {
   color: #060606;
   font-size: 21px;
 }
-section.about_experience .epx_list img {
+section.about_experience .epx_list .image-container img {
   border-radius: 10px;
 }
 section.about_experience .team__content a:hover,

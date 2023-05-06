@@ -298,7 +298,7 @@ footer .footer__column ul li a:hover {
 
 footer .footer__column > a i {
   position: absolute;
-  top: -7px;
+  top: -14px;
   left: 68px;
   font-size: 20px;
   color: #fb811e;
@@ -307,6 +307,7 @@ footer .footer__column > a i {
 
 footer .footer__column a h1 {
   font-size: 32px;
+  line-height: 25px;
   color: #fb811e;
   font-family: var(--font-volkhov);
   margin-bottom: 24px;
