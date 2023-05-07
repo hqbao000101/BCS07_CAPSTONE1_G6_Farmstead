@@ -86,6 +86,13 @@ section.contact_contactUs .item__list a:hover {
   cursor: pointer;
   transition: all 0.5s;
 }
+
+section.contact_contactUs input,
+section.contact_contactUs textarea {
+  padding: 14px;
+  border: 1px solid #eee;
+}
+
 section.contact_contactUs input:focus,
 section.contact_contactUs textarea:focus {
   /* border: #fb811e; */
