@@ -95,7 +95,7 @@ body a {
 }
 
 .btn-style:hover {
-  background: #009f4d;
+  background-color: #009f4d !important;
   color: #ffffff;
 }
 
@@ -116,7 +116,8 @@ footer h1 {
 }
 
 /***** dark-theme *****/
-.dark-theme .services_banner .banner_content ul {
+.dark-theme .blog_banner .banner_content ul,
+.dark-theme .blog_banner .banner_content ul a {
   color: #b7b7b7;
 }
 
@@ -141,6 +142,13 @@ footer h1 {
 
 .dark-theme .widget {
   background: #222222;
+}
+
+.dark-theme .widget.widget_recent_entries ul li,
+.dark-theme .widget.widget_archive ul li,
+.dark-theme .widget.widget_meta ul li,
+.dark-theme .widget.widget_categories ul li {
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .dark-theme .widget.widget_recent_entries ul li a,
@@ -185,6 +193,14 @@ footer h1 {
   vertical-align: middle;
   font-size: 15px;
   text-transform: capitalize;
+}
+
+.blog_banner .banner_content ul a {
+  transition: all 0.5s;
+}
+
+.blog_banner .banner_content ul a:hover {
+  color: #fb811e;
 }
 
 .blog_banner .banner_content .title h4,
@@ -464,6 +480,10 @@ h2.widget-title a {
   line-height: 24px;
 }
 
+.widget.widget_recent_entries ul li a:hover {
+  color: #fb811e;
+}
+
 ul#recentcomments li {
   margin: 20px 0;
   color: #707070;
@@ -488,4 +508,19 @@ ul#recentcomments li a {
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #eee;
+}
+
+.widget.widget_recent_entries ul li a,
+.widget.widget_archive ul li a,
+.widget.widget_meta ul li a,
+.widget.widget_categories ul li a {
+  color: #060606;
+  transition: all 0.5s;
+}
+
+.widget.widget_recent_entries ul li a:hover,
+.widget.widget_archive ul li a:hover,
+.widget.widget_meta ul li a:hover,
+.widget.widget_categories ul li a:hover {
+  color: #fb811e;
 }

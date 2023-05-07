@@ -397,6 +397,7 @@ footer .footer__column .footer__social a i:hover {
   border-radius: 4px;
   opacity: 0;
   visibility: hidden;
+  z-index: 15;
   transition: all .5s;
 }
 

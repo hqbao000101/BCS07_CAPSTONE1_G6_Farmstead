@@ -33,9 +33,19 @@ a {
 }
 
 /***** dark-theme *****/
-.dark-theme .services_banner .banner_content ul {
+.dark-theme .services_banner .banner_content ul, 
+.dark-theme .services_banner .banner_content ul a {
   color: #b7b7b7;
 }
+
+.dark-theme .services_products .products_item h4 a,
+.dark-theme .services_quality .quality_content .quality_right h3,
+.dark-theme .services_number .number_content .number_item .count-number,
+.dark-theme .services_number .number_content .number_item .count-text {
+  color: #fdfffc;
+}
+
+
 /***** End dark-theme *****/
 
 header h1,
@@ -63,6 +73,14 @@ footer h1 {
   text-transform: capitalize;
 }
 
+.services_banner .banner_content ul a {
+  transition: all 0.5s;
+}
+
+.services_banner .banner_content ul a:hover {
+  color: #fb811e;
+}
+
 .services_banner .banner_content .title h4,
 .services_banner .banner_content .title a {
   font-weight: 700;
@@ -87,7 +105,12 @@ footer h1 {
   color: #fb811e;
 }
 
+.services_products .products_item h4 {
+  margin: 25px 0 15px;
+}
+
 .services_products .products_item h4 a {
+  color: #060606;
   transition: all 0.5s;
 }
 
@@ -141,6 +164,10 @@ footer h1 {
 .services_number .number_content .number_item .count-number {
   font-size: 3rem;
   font-weight: 600;
+  color: #060606;
+}
+
+.services_number .number_content .number_item .count-text {
   color: #060606;
 }
 

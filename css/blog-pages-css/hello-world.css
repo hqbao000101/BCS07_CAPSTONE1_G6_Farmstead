@@ -247,3 +247,7 @@ input#submit {
     border-radius: 30px;
     transition: all .25s ease-in-out;
 }
+
+input#submit:hover {
+    background-color: #009f4d;
+}

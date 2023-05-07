@@ -82,76 +82,78 @@ section.about_experience .epx_list .image-container img {
   border-radius: 10px;
 }
 section.about_experience .team__content a:hover,
-section.about_experience .overlay__content a:hover
-{
+section.about_experience .overlay__content a:hover {
   color: #fb811e;
 }
 .section.about_experience .card__item .epx_item {
-    position: relative;
-    /* chỉ hiển thị chữ bên trong vùng hiển thị */
-    overflow: hidden;
-  }
-  section.about_experience .card__item .epx_item:hover .epx__item__overlay {
-    opacity: 1;
-  }
-  section.about_experience .card__item .epx__item__overlay {
-    position: absolute;
-    /* lớp overlay cho 4 hướng = 0 thì nó phủ full */
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    opacity: 0;
-    border-radius: 10px;
-    margin: 20px;
-  }
-  section.about_experience .card__item .overlay__icon {
-    text-align: center;
-    margin-top: 80px;
-  }
-  section.about_experience .card__item 
-    .overlay__content {
-    text-align: center;
-    transform: translateY(40px) scale(1.5);
-  }
-  section.about_experience .card__item 
-    .overlay__content h4 a {
-    font-size: 1.6rem;
-    color: white;
-    font-weight: bold;
-    transform: translateY(20px);
-  }
-  section.about_experience .card__item 
-    .overlay__content p {
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-  section.about_experience .epx_item:hover .overlay__content {
-    transform: translateY(0);
-    transition: all 0.5s;
-  }
-  section.about_experience .card__item .overlay__icon i {
-    padding: 15px;
-    transform: translateY(20px);
-    color: white;
-    border-radius: 10px;
-  }
-  section.about_experience .epx_item:hover .overlay__icon i {
-    transform: translateY(0);
-    transition: all 0.5s;
-  }
-  section.about_experience .card__item .overlay__icon a i:hover {
-    cursor: pointer;
-    color: #fb811e;
-  }
+  position: relative;
+  /* chỉ hiển thị chữ bên trong vùng hiển thị */
+  overflow: hidden;
+}
+section.about_experience .card__item .epx_item:hover .epx__item__overlay {
+  opacity: 1;
+}
+section.about_experience .card__item .epx__item__overlay {
+  position: absolute;
+  /* lớp overlay cho 4 hướng = 0 thì nó phủ full */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  border-radius: 10px;
+  margin: 16px;
+}
+section.about_experience .card__item .overlay__icon {
+  text-align: center;
+  margin-top: 80px;
+}
+section.about_experience .card__item .overlay__content {
+  text-align: center;
+  transform: translateY(40px) scale(1.5);
+}
+section.about_experience .card__item .overlay__content h4 a {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  transform: translateY(20px);
+  transition: all 0.5s;
+}
+
+section.about_experience .card__item .overlay__content h4 a:hover {
+  color: #fb811e;
+}
+
+section.about_experience .card__item .overlay__content p {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+section.about_experience .epx_item:hover .overlay__content {
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+section.about_experience .card__item .overlay__icon i {
+  padding: 15px;
+  transform: translateY(20px);
+  color: white;
+  border-radius: 10px;
+}
+section.about_experience .epx_item:hover .overlay__icon i {
+  transform: translateY(0);
+  transition: all 0.5s;
+}
+section.about_experience .card__item .overlay__icon a i:hover {
+  cursor: pointer;
+  color: #fb811e;
+}
 section.about_product .play-view {
   left: 0;
   right: 0;
